@@ -24,9 +24,9 @@ export function Categories() {
           {categories.map((category) => (
             <article
               key={category.title}
-              className="group overflow-hidden rounded-lg border border-[#eadfce] bg-cream shadow-sm transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(43,33,24,0.10)]"
+              className="group overflow-hidden rounded-lg border border-line bg-cream shadow-sm transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(43,33,24,0.10)]"
             >
-              <div className="relative h-44 overflow-hidden bg-[#e8ded2]">
+              <div className="relative h-44 overflow-hidden bg-linen">
                 <img
                   src={category.image}
                   alt={category.imageAlt}

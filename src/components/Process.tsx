@@ -37,7 +37,7 @@ export function Process() {
           {quoteItems.map((item) => (
             <div
               key={item}
-              className="rounded-lg border border-[#eadfce] bg-cream px-4 py-3 text-sm font-semibold text-coffee shadow-sm"
+              className="rounded-lg border border-line bg-cream px-4 py-3 text-sm font-semibold text-coffee shadow-sm"
             >
               {item}
             </div>
@@ -48,7 +48,7 @@ export function Process() {
           {processSteps.map((step, index) => (
             <li
               key={step}
-              className="flex gap-4 rounded-lg border border-[#eadfce] bg-cream p-5 shadow-sm"
+              className="flex gap-4 rounded-lg border border-line bg-cream p-5 shadow-sm"
             >
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coffee text-sm font-semibold text-porcelain">
                 {index + 1}

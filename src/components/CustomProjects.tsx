@@ -39,7 +39,7 @@ export function CustomProjects() {
           {features.map((feature) => (
             <div
               key={feature}
-              className="border border-[#eadfce] bg-cream p-6 font-semibold text-coffee shadow-sm"
+              className="border border-line bg-cream p-6 font-semibold text-coffee shadow-sm"
             >
               {feature}
             </div>

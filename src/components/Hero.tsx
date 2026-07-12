@@ -41,7 +41,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-[#eadfce] bg-porcelain shadow-[0_24px_60px_rgba(43,33,24,0.10)]">
+        <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-line bg-porcelain shadow-[0_24px_60px_rgba(43,33,24,0.10)]">
           <img
             src="/images/hero/quarto-cama-cabeceira-ilustrativa.jpg"
             alt="Quarto ilustrativo com cama estofada e cabeceira personalizada"

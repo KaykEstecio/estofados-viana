@@ -22,9 +22,9 @@ export function Portfolio() {
           {portfolioItems.map((item) => (
             <article
               key={item.id}
-              className="overflow-hidden rounded-lg border border-[#eadfce] bg-porcelain shadow-sm"
+              className="overflow-hidden rounded-lg border border-line bg-porcelain shadow-sm"
             >
-              <div className="relative h-72 overflow-hidden bg-[#e8ded2]">
+              <div className="relative h-72 overflow-hidden bg-linen">
                 <img
                   src={item.image}
                   alt={item.imageAlt}
@@ -62,7 +62,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-lg border border-[#eadfce] bg-porcelain p-6 shadow-sm sm:flex sm:items-center sm:justify-between sm:gap-6">
+        <div className="mt-10 rounded-lg border border-line bg-porcelain p-6 shadow-sm sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div>
             <h3 className="text-xl font-semibold text-ink">
               Gostou de algum estilo?

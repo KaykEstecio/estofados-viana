@@ -32,7 +32,7 @@ export function Contact() {
           </a>
         </div>
 
-        <div className="rounded-lg border border-[#eadfce] bg-cream p-6 shadow-sm sm:p-8">
+        <div className="rounded-lg border border-line bg-cream p-6 shadow-sm sm:p-8">
           <dl className="space-y-5 text-coffee">
             <div>
               <dt className="font-semibold text-ink">Empresa</dt>

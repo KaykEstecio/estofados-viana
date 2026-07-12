@@ -21,7 +21,7 @@ export function Services() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="rounded-lg border border-[#eadfce] bg-porcelain p-6 shadow-sm"
+              className="rounded-lg border border-line bg-porcelain p-6 shadow-sm"
             >
               <h3 className="text-xl font-semibold text-ink">
                 {service.title}
