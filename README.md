@@ -1,6 +1,7 @@
-# Estofados Viana
+# Aconche Decor
 
-Site institucional em formato de portfólio comercial para camas, cabeceiras e estofados personalizados.
+Site institucional da Aconche Decor, fábrica de camas e cabeceiras personalizadas
+com atendimento na Grande São Paulo.
 
 ## Documentação
 
@@ -69,3 +70,21 @@ Para revisar a versão de produção localmente:
 ```powershell
 npm run preview
 ```
+
+## Publicação na Vercel
+
+O projeto está configurado como aplicação Vite, com build em `dist` e headers
+de segurança definidos em `vercel.json`.
+
+1. Envie todas as alterações para o repositório GitHub.
+2. Acesse o painel da Vercel e escolha **Add New > Project**.
+3. Importe o repositório `KaykEstecio/estofados-viana`.
+4. Confirme o framework **Vite**.
+5. Confirme o comando `npm run build` e a pasta de saída `dist`.
+6. Clique em **Deploy**.
+
+Cada atualização enviada para a branch principal gerará um novo deploy de
+produção. Outras branches e pull requests poderão gerar previews.
+
+Depois da publicação, substitua as URLs relativas de canonical e Open Graph em
+`index.html` pelo domínio definitivo da Vercel ou pelo domínio próprio.

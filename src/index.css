@@ -19,3 +19,23 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #b9824a;
+  outline-offset: 4px;
+}

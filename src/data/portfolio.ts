@@ -5,27 +5,30 @@ export type PortfolioItem = {
   description: string;
   highlight: string;
   image: string;
+  imageAlt: string;
 };
 
 export const portfolioItems: PortfolioItem[] = [
   {
     id: "cabeceira-estofada-personalizada",
-    title: "Cabeceira estofada personalizada",
+    title: "Cabeceira estofada sob medida",
     category: "Cabeceiras Personalizadas",
     description:
-      "Cabeceira sob medida com acabamento estofado, tecido em tom neutro e visual elegante para compor o ambiente.",
+      "Cabeceira planejada para valorizar a parede da cama com proporção, conforto visual e acabamento estofado.",
     highlight:
-      "Projeto desenvolvido com atenção às medidas, tecido e acabamento final.",
-    image: "/images/portfolio/cabeceira-estofada-personalizada.webp",
+      "Ideal para quartos que pedem uma peça personalizada, discreta e bem integrada ao ambiente.",
+    image: "/images/categories/cabeceira-estofada-ilustrativa.jpg",
+    imageAlt: "Referência ilustrativa de cabeceira estofada feita sob medida",
   },
   {
     id: "cama-estofada-sob-medida",
     title: "Cama estofada sob medida",
     category: "Camas Personalizadas",
     description:
-      "Cama personalizada desenvolvida conforme o espaço, estilo e necessidade do cliente.",
+      "Cama personalizada para criar uma base confortável, elegante e alinhada ao estilo do quarto.",
     highlight:
-      "Peça sob medida para entregar conforto, sofisticação e melhor aproveitamento do quarto.",
-    image: "/images/portfolio/cama-estofada-sob-medida.webp",
+      "Projeto pensado para unir presença visual, conforto e melhor aproveitamento do espaço disponível.",
+    image: "/images/categories/cama-personalizada-ilustrativa.jpg",
+    imageAlt: "Referência ilustrativa de cama estofada personalizada para o quarto",
   },
 ];

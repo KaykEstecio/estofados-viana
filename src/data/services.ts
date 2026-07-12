@@ -7,36 +7,36 @@ export const services: ServiceItem[] = [
   {
     title: "Camas Personalizadas",
     description:
-      "Projetos sob medida para camas estofadas, considerando conforto, estilo, medidas e acabamento.",
+      "Camas feitas sob medida para harmonizar com o quarto, respeitando estilo, proporção e acabamento desejado.",
   },
   {
     title: "Cabeceiras Personalizadas",
     description:
-      "Cabeceiras desenvolvidas conforme o ambiente, com diferentes modelos, tecidos, alturas e detalhes.",
+      "Cabeceiras planejadas para o espaço do cliente, com altura, desenho e acabamento definidos conforme o ambiente.",
   },
   {
     title: "Cabeceiras Estofadas",
     description:
-      "Cabeceiras com acabamento estofado para valorizar o quarto com conforto e personalidade.",
+      "Acabamento estofado para trazer mais conforto visual, aconchego e presença para a parede da cama.",
   },
   {
     title: "Camas Box Sob Medida",
     description:
-      "Camas box personalizadas de acordo com o espaço, modelo e necessidade do cliente.",
+      "Camas box adaptadas ao espaço disponível e à proposta visual do quarto.",
   },
   {
     title: "Recamiers",
     description:
-      "Recamiers estofados para complementar quartos com elegância e funcionalidade.",
+      "Recamiers estofados para compor pés de cama, quartos e ambientes de descanso com praticidade.",
   },
   {
     title: "Puffs",
     description:
-      "Puffs personalizados para compor ambientes residenciais ou comerciais.",
+      "Puffs personalizados para apoio, composição decorativa e uso diário em diferentes ambientes.",
   },
   {
     title: "Estofados Sob Medida",
     description:
-      "Desenvolvimento de peças estofadas personalizadas conforme a necessidade do projeto.",
+      "Peças estofadas desenvolvidas conforme a necessidade do ambiente e a função desejada.",
   },
 ];
