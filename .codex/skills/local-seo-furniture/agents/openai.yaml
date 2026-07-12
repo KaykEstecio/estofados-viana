@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local SEO Furniture"
+  short_description: "SEO local para moveis sob medida"
+  default_prompt: "Use $local-seo-furniture para revisar o SEO local de um site de camas, cabeceiras e estofados personalizados."

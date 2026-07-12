@@ -1,0 +1,4 @@
+interface:
+  display_name: "WhatsApp Conversion"
+  short_description: "Revisao de conversao com foco em WhatsApp"
+  default_prompt: "Use $whatsapp-conversion para revisar um site local com foco em captar clientes pelo WhatsApp."

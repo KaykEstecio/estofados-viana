@@ -1,0 +1,4 @@
+interface:
+  display_name: "Static Site Security"
+  short_description: "Seguranca para sites estaticos React"
+  default_prompt: "Use $static-site-security para revisar a seguranca de um site estatico React + Vite na Vercel."

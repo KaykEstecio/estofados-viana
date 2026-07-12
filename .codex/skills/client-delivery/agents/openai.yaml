@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Delivery"
+  short_description: "Entrega final de sites institucionais"
+  default_prompt: "Use $client-delivery para preparar a entrega final de um site institucional React + Vite para cliente."

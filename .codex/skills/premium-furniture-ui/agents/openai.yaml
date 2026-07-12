@@ -1,0 +1,4 @@
+interface:
+  display_name: "Premium Furniture UI"
+  short_description: "UI premium para moveis e estofados"
+  default_prompt: "Use $premium-furniture-ui para revisar e melhorar uma interface React + TypeScript + TailwindCSS de moveis sob medida."

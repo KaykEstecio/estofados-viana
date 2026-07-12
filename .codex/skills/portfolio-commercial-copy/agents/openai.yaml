@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Commercial Copy"
+  short_description: "Copy comercial para portfolios de moveis"
+  default_prompt: "Use $portfolio-commercial-copy para criar textos comerciais para um portfolio de camas, cabeceiras e estofados personalizados."
