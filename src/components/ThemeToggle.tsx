@@ -28,11 +28,11 @@ export function ThemeToggle() {
       aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
       title={isDark ? "Tema claro" : "Tema escuro"}
       onClick={toggleTheme}
-      className="flex h-9 w-14 shrink-0 items-center rounded-full border border-line bg-linen p-1 transition"
+      className="flex h-9 w-14 shrink-0 items-center rounded-full border border-[#bca88f] bg-[#e8ded2] p-1 shadow-inner transition"
     >
       <span
         aria-hidden="true"
-        className={`h-6 w-6 rounded-full bg-porcelain shadow-sm transition-transform ${isDark ? "translate-x-5" : "translate-x-0"}`}
+        className={`h-6 w-6 rounded-full bg-[#4a3328] shadow-sm ring-1 ring-black/10 transition-transform ${isDark ? "translate-x-5" : "translate-x-0"}`}
       />
     </button>
   );

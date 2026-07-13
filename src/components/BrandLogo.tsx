@@ -7,7 +7,7 @@ type BrandLogoProps = {
 export function BrandLogo({ textClassName = "text-ink" }: BrandLogoProps) {
   return (
     <span className="inline-flex min-w-0 items-center gap-2.5">
-      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-linen p-1.5 shadow-sm">
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-[#d8c5ad] bg-[#f4e7d8] p-1.5 shadow-sm">
         <img
           src="/images/logo/aconche-decor-mark.png"
           alt=""
