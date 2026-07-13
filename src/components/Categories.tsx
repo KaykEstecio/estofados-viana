@@ -13,9 +13,9 @@ export function Categories() {
           </div>
         </div>
         <div className="grid min-h-[660px] grid-cols-5 grid-rows-6 gap-3 lg:sticky lg:top-28 lg:h-[720px]">
-          <figure className="image-wash col-span-5 row-span-4"><img src={categories[0].image} alt={categories[0].imageAlt} className="h-full w-full object-cover" /></figure>
-          <figure className="image-wash col-span-3 row-span-2"><img src={categories[1].image} alt={categories[1].imageAlt} className="h-full w-full object-cover" /></figure>
-          <figure className="image-wash col-span-2 row-span-2"><img src={categories[4].image} alt={categories[4].imageAlt} className="h-full w-full object-cover" /></figure>
+          <figure className="image-wash col-span-5 row-span-4"><img src={categories[0].image} alt={categories[0].imageAlt} className="h-full w-full object-cover" /><figcaption className="absolute bottom-3 right-3 z-10 bg-[#f5f0e9]/90 px-3 py-2 text-[0.56rem] font-semibold uppercase tracking-[0.12em] text-[#302720]">Imagem ilustrativa</figcaption></figure>
+          <figure className="image-wash col-span-3 row-span-2"><img src={categories[1].image} alt={categories[1].imageAlt} className="h-full w-full object-cover" /><figcaption className="absolute bottom-3 left-3 z-10 bg-[#f5f0e9]/90 px-2 py-1.5 text-[0.52rem] font-semibold uppercase tracking-[0.1em] text-[#302720]">Imagem ilustrativa</figcaption></figure>
+          <figure className="image-wash col-span-2 row-span-2"><img src={categories[4].image} alt={categories[4].imageAlt} className="h-full w-full object-cover" /><figcaption className="absolute bottom-3 right-3 z-10 bg-[#f5f0e9]/90 px-2 py-1.5 text-[0.52rem] font-semibold uppercase tracking-[0.1em] text-[#302720]">Imagem ilustrativa</figcaption></figure>
         </div>
       </div>
     </section>
