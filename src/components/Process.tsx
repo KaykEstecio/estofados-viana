@@ -1,71 +1,20 @@
-import { getWhatsAppLink } from "../utils/whatsapp";
-
-const processSteps = [
-  "Você envia uma referência ou ideia pelo WhatsApp",
-  "A equipe entende o modelo desejado",
-  "São avaliados medidas, acabamento e detalhes do projeto",
-  "O orçamento é enviado com as informações combinadas",
-  "Após aprovação, a peça é produzida sob medida",
-  "Entrega ou instalação são combinadas conforme o atendimento",
-];
-
-const quoteItems = [
-  "Referência do modelo desejado",
-  "Medidas aproximadas do espaço",
-  "Ideia de tecido, cor ou acabamento",
+const steps = [
+  ["01", "Atendimento", "Você envia medidas, fotos e referências para entendermos o que procura."],
+  ["02", "Definição", "Alinhamos desenho, proporções e acabamento conforme o ambiente."],
+  ["03", "Produção", "A peça é preparada de acordo com as escolhas combinadas no atendimento."],
+  ["04", "Entrega", "Entrega ou instalação é combinada para cada projeto."],
 ];
 
 export function Process() {
   return (
-    <section id="orcamento" className="bg-porcelain py-20">
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Orçamento
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Como funciona o orçamento
-          </h2>
-          <p className="mt-4 leading-7 text-coffee">
-            Para começar, envie uma referência e algumas informações iniciais.
-            A partir disso, o atendimento segue pelo WhatsApp com os detalhes do
-            projeto.
-          </p>
+    <section id="processo" className="bg-[#29201b] py-20 text-[#f6eee4] sm:py-24">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_2fr]">
+          <div><p className="editorial-label text-[#d67850]">Como funciona</p><h2 className="font-display mt-4 text-5xl font-medium leading-[0.94]">Do primeiro contato à peça pronta.</h2></div>
+          <ol className="grid border-t border-white/20 sm:grid-cols-2 lg:grid-cols-4">
+            {steps.map(([number, title, text]) => <li key={number} className="border-b border-white/20 py-7 sm:px-5 sm:[&:nth-child(odd)]:border-r lg:border-b-0 lg:border-r lg:last:border-r-0"><span className="editorial-label text-[#d67850]">{number}</span><h3 className="font-display mt-8 text-2xl">{title}</h3><p className="mt-3 text-sm leading-6 text-[#cfc0b3]">{text}</p></li>)}
+          </ol>
         </div>
-
-        <div className="mt-8 grid gap-3 sm:grid-cols-3">
-          {quoteItems.map((item) => (
-            <div
-              key={item}
-              className="rounded-lg border border-line bg-cream px-4 py-3 text-sm font-semibold text-coffee shadow-sm"
-            >
-              {item}
-            </div>
-          ))}
-        </div>
-
-        <ol className="mt-8 grid gap-4 lg:grid-cols-2">
-          {processSteps.map((step, index) => (
-            <li
-              key={step}
-              className="flex gap-4 rounded-lg border border-line bg-cream p-5 shadow-sm"
-            >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coffee text-sm font-semibold text-porcelain">
-                {index + 1}
-              </span>
-              <p className="pt-1 leading-7 text-coffee">{step}</p>
-            </li>
-          ))}
-        </ol>
-
-        <a
-          href={getWhatsAppLink("Olá, gostaria de solicitar um orçamento para um projeto sob medida. Posso enviar uma referência, medidas aproximadas e detalhes do acabamento?")}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-8 inline-flex rounded-md bg-coffee px-5 py-3 font-semibold text-porcelain transition hover:bg-ink"
-        >
-          Começar orçamento no WhatsApp
-        </a>
       </div>
     </section>
   );

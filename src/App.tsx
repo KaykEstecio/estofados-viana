@@ -16,11 +16,11 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Categories />
         <Portfolio />
+        <Process />
+        <Categories />
         <CustomProjects />
         <Services />
-        <Process />
         <About />
         <Contact />
       </main>

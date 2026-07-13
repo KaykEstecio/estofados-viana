@@ -1,49 +1,15 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
-const features = [
-  "Medidas personalizadas",
-  "Escolha de tecidos",
-  "Acabamento profissional",
-  "Design para quartos",
-  "Conforto e elegância",
-  "Atendimento pelo WhatsApp",
-];
+const points = [["Proporção", "Medidas e desenho considerados conforme o espaço."], ["Composição", "Referências alinhadas ao estilo do quarto."], ["Acabamento", "Detalhes definidos durante o atendimento."]];
 
 export function CustomProjects() {
   return (
-    <section id="sob-medida" className="bg-porcelain py-20">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Sob medida
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Projetos sob medida para o seu quarto
-          </h2>
-          <p className="mt-5 leading-8 text-coffee">
-            Cada peça parte do espaço disponível, das medidas desejadas e da
-            proposta do ambiente. Assim, camas, cabeceiras e estofados ganham
-            proporção, conforto e acabamento coerentes com o quarto.
-          </p>
-          <a
-            href={getWhatsAppLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex rounded-md bg-coffee px-5 py-3 font-semibold text-porcelain transition hover:bg-ink"
-          >
-            Enviar ideia do projeto
-          </a>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          {features.map((feature) => (
-            <div
-              key={feature}
-              className="border border-line bg-cream p-6 font-semibold text-coffee shadow-sm"
-            >
-              {feature}
-            </div>
-          ))}
+    <section id="sob-medida" className="border-y border-line bg-porcelain">
+      <div className="mx-auto grid max-w-[1440px] lg:grid-cols-2">
+        <div className="px-5 py-20 sm:px-8 lg:px-12 lg:py-28"><p className="editorial-label text-caramel">Sob medida de verdade</p><h2 className="font-display mt-4 max-w-xl text-5xl font-medium leading-[0.94] sm:text-6xl">A peça parte do ambiente — não de um modelo pronto.</h2><p className="mt-8 max-w-lg text-sm leading-7 text-coffee">Converse com a gente, envie uma referência e conte como imagina o seu quarto. A partir disso, avaliamos juntos o caminho do projeto.</p><a href={getWhatsAppLink("Olá, gostaria de conversar sobre um projeto sob medida para o meu ambiente.")} target="_blank" rel="noreferrer" className="mt-9 inline-flex items-center gap-2 border-b border-ink pb-2 text-sm font-semibold">Começar uma conversa <FiArrowUpRight aria-hidden="true" /></a></div>
+        <div className="border-t border-line lg:border-l lg:border-t-0">
+          {points.map(([title, text], index) => <div key={title} className="grid min-h-[170px] grid-cols-[50px_1fr] gap-4 border-b border-line px-5 py-8 last:border-b-0 sm:px-8 lg:px-12"><span className="editorial-label text-caramel">0{index + 1}</span><div><h3 className="font-display text-3xl">{title}</h3><p className="mt-3 max-w-sm text-sm leading-6 text-coffee">{text}</p></div></div>)}
         </div>
       </div>
     </section>

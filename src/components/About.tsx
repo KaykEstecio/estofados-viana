@@ -1,34 +1,9 @@
-import { siteConfig } from "../data/siteConfig";
-
 export function About() {
   return (
-    <section id="sobre" className="bg-cream py-20">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Sobre
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Sobre a {siteConfig.businessName}
-          </h2>
-        </div>
-
-        <div className="space-y-5 text-lg leading-8 text-coffee">
-          <p>
-            A {siteConfig.businessName} é uma fábrica de camas, cabeceiras e estofados personalizados para
-            quartos que precisam de peças sob medida, proporcionais ao espaço e
-            alinhadas ao estilo do ambiente.
-          </p>
-          <p>
-            O atendimento considera a ideia do cliente, as medidas disponíveis e
-            os detalhes desejados para orientar uma solução clara antes da
-            produção.
-          </p>
-          <p className="border-l-2 border-caramel bg-porcelain p-5 text-base leading-7">
-            Atendimento na {siteConfig.serviceRegion}, {siteConfig.openingHours.toLowerCase()}. O prazo é
-            {" "}{siteConfig.deliveryTime.toLowerCase()}. {siteConfig.deliveryInfo}.
-          </p>
-        </div>
+    <section id="sobre" className="bg-linen py-20 sm:py-28">
+      <div className="mx-auto grid max-w-[1440px] gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
+        <figure className="image-wash min-h-[460px]"><img src="/images/about/artesao-estofando.png" alt="Mãos trabalhando no acabamento de uma peça estofada" className="h-full w-full object-cover" /><figcaption className="absolute bottom-4 left-4 z-10 bg-[#f5f0e9]/90 px-3 py-2 text-[0.58rem] uppercase tracking-[0.12em] text-[#302720]">Imagem ilustrativa</figcaption></figure>
+        <div className="flex flex-col justify-center lg:pl-10"><p className="editorial-label text-caramel">Aconche Decor</p><h2 className="font-display mt-4 text-5xl font-medium leading-[0.94] sm:text-6xl">O cuidado aparece no conjunto.</h2><p className="mt-8 text-base leading-8 text-coffee">Somos especializados em camas, cabeceiras e estofados personalizados. O atendimento começa pela escuta: entendemos o ambiente, as referências e as necessidades de cada projeto.</p><p className="mt-5 text-base leading-8 text-coffee">Nosso objetivo é criar uma peça coerente com o espaço e com a forma como você deseja viver nele.</p><div className="mt-10 border-t border-line pt-6"><p className="editorial-label text-coffee">Atendimento</p><p className="mt-2 font-display text-2xl">Grande São Paulo</p></div></div>
       </div>
     </section>
   );

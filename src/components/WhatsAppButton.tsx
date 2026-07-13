@@ -1,15 +1,6 @@
+import { FaWhatsapp } from "react-icons/fa";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 export function WhatsAppButton() {
-  return (
-    <a
-      href={getWhatsAppLink()}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Solicitar orçamento pelo WhatsApp"
-      className="fixed bottom-4 right-4 z-50 rounded-full bg-coffee px-4 py-3 text-sm font-semibold text-porcelain shadow-[0_12px_30px_rgba(43,33,24,0.25)] transition hover:bg-ink sm:bottom-5 sm:right-5 sm:px-5"
-    >
-      Orçamento
-    </a>
-  );
+  return <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" aria-label="Falar com a Aconche Decor pelo WhatsApp" className="fixed bottom-5 right-5 z-50 inline-flex h-13 min-h-12 items-center gap-3 bg-[#277a4f] px-4 text-sm font-semibold text-white shadow-xl transition-transform hover:-translate-y-1"><FaWhatsapp className="text-xl" aria-hidden="true" /><span className="hidden sm:inline">Falar no WhatsApp</span></a>;
 }

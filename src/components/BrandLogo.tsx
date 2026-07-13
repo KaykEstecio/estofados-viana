@@ -1,29 +1,19 @@
-import { siteConfig } from "../data/siteConfig";
+type BrandLogoProps = { inverted?: boolean };
 
-type BrandLogoProps = {
-  textClassName?: string;
-};
-
-export function BrandLogo({ textClassName = "text-ink" }: BrandLogoProps) {
+export function BrandLogo({ inverted = false }: BrandLogoProps) {
   return (
-    <span className="inline-flex min-w-0 items-center gap-2.5">
-      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-[#d8c5ad] bg-[#f4e7d8] p-1.5 shadow-sm">
-        <img
-          src="/images/logo/aconche-decor-mark.png"
-          alt=""
-          width="40"
-          height="40"
-          className="size-full object-contain"
-        />
+    <a href="#inicio" aria-label="Aconche Decor — início" className="group inline-flex items-center gap-3">
+      <span className={`grid h-9 w-9 place-items-center border ${inverted ? "border-white/30" : "border-line"}`}>
+        <span className="font-display text-2xl leading-none text-caramel">A</span>
       </span>
-      <span className={`min-w-0 leading-none ${textClassName}`}>
-        <span className="block truncate text-base font-semibold tracking-wide sm:text-lg">
-          {siteConfig.businessName}
+      <span className="flex flex-col">
+        <span className={`font-display text-[1.42rem] font-semibold leading-none tracking-[-0.02em] ${inverted ? "text-[#f7f0e6]" : "text-ink"}`}>
+          Aconche Decor
         </span>
-        <span className="mt-1 hidden text-[0.62rem] font-medium uppercase tracking-[0.16em] opacity-75 sm:block">
-          Camas e cabeceiras
+        <span className={`mt-1 text-[0.54rem] font-semibold uppercase tracking-[0.24em] ${inverted ? "text-[#d2c3b4]" : "text-coffee"}`}>
+          Estofados sob medida
         </span>
       </span>
-    </span>
+    </a>
   );
 }

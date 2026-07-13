@@ -1,34 +1,7 @@
-export type PortfolioItem = {
-  id: string;
-  title: string;
-  category: string;
-  description: string;
-  highlight: string;
-  image: string;
-  imageAlt: string;
-};
+export type PortfolioItem = { id: string; title: string; category: string; description: string; highlight: string; image: string; imageAlt: string };
 
 export const portfolioItems: PortfolioItem[] = [
-  {
-    id: "cabeceira-estofada-personalizada",
-    title: "Cabeceira estofada sob medida",
-    category: "Cabeceiras Personalizadas",
-    description:
-      "Cabeceira planejada para valorizar a parede da cama com proporção, conforto visual e acabamento estofado.",
-    highlight:
-      "Ideal para quartos que pedem uma peça personalizada, discreta e bem integrada ao ambiente.",
-    image: "/images/categories/cabeceira-estofada-ilustrativa.jpg",
-    imageAlt: "Referência ilustrativa de cabeceira estofada feita sob medida",
-  },
-  {
-    id: "cama-estofada-sob-medida",
-    title: "Cama estofada sob medida",
-    category: "Camas Personalizadas",
-    description:
-      "Cama personalizada para criar uma base confortável, elegante e alinhada ao estilo do quarto.",
-    highlight:
-      "Projeto pensado para unir presença visual, conforto e melhor aproveitamento do espaço disponível.",
-    image: "/images/categories/cama-personalizada-ilustrativa.jpg",
-    imageAlt: "Referência ilustrativa de cama estofada personalizada para o quarto",
-  },
+  { id: "cabeceira-vertical", title: "Linhas verticais", category: "Cabeceira estofada", description: "Uma referência de composição vertical para criar ritmo, altura e aconchego na parede da cama.", highlight: "Desenho adaptável às proporções do ambiente.", image: "/images/portfolio/projeto-cabeceira-vertical.png", imageAlt: "Referência ilustrativa de cabeceira estofada com linhas verticais" },
+  { id: "cabeceira-modular", title: "Geometria modular", category: "Projeto sob medida", description: "Módulos estofados que organizam a parede e ajudam a integrar cama, iluminação e decoração.", highlight: "Composição pensada conforme o espaço disponível.", image: "/images/portfolio/projeto-cabeceira-modular.png", imageAlt: "Referência ilustrativa de cabeceira estofada modular" },
+  { id: "cabeceira-curva", title: "Contorno suave", category: "Cama personalizada", description: "Curvas e volumes sutis para um quarto acolhedor, com uma presença visual leve e contemporânea.", highlight: "Referência para definir desenho e acabamento.", image: "/images/portfolio/projeto-cabeceira-curva.png", imageAlt: "Referência ilustrativa de cama estofada com cabeceira curva" },
 ];

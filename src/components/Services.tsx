@@ -2,36 +2,9 @@ import { services } from "../data/services";
 
 export function Services() {
   return (
-    <section id="servicos" className="bg-cream py-20">
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Serviços
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Soluções estofadas para quartos personalizados
-          </h2>
-          <p className="mt-4 leading-7 text-coffee">
-            Catálogo inicial sujeito à confirmação. Consulte pelo WhatsApp quais
-            peças estão disponíveis para orçamento.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="rounded-lg border border-line bg-porcelain p-6 shadow-sm"
-            >
-              <h3 className="text-xl font-semibold text-ink">
-                {service.title}
-              </h3>
-              <p className="mt-3 leading-7 text-coffee">
-                {service.description}
-              </p>
-            </article>
-          ))}
-        </div>
+    <section className="py-20 sm:py-28">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-8 lg:grid-cols-[0.75fr_2fr]"><div><p className="editorial-label text-caramel">Possibilidades</p><h2 className="font-display mt-4 text-4xl font-medium">Para além da cama.</h2></div><div className="grid border-t border-line sm:grid-cols-2">{services.slice(4).map((service) => <article key={service.title} className="border-b border-line py-7 sm:px-6 sm:[&:nth-child(odd)]:border-r"><h3 className="font-display text-2xl">{service.title}</h3><p className="mt-3 text-sm leading-6 text-coffee">{service.description}</p></article>)}</div></div>
       </div>
     </section>
   );

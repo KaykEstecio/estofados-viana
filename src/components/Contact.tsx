@@ -1,85 +1,19 @@
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FiArrowUpRight, FiMail, FiPhone } from "react-icons/fi";
 import { siteConfig } from "../data/siteConfig";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 export function Contact() {
+  const contacts = [
+    { label: "WhatsApp", value: siteConfig.whatsappDisplay, href: getWhatsAppLink(), icon: <FaWhatsapp /> },
+    { label: "Comercial", value: siteConfig.commercialPhoneDisplay, href: `tel:+${siteConfig.commercialPhone}`, icon: <FiPhone /> },
+    { label: "Instagram", value: siteConfig.instagramHandle, href: siteConfig.instagramUrl, icon: <FaInstagram /> },
+    { label: "E-mail", value: siteConfig.email, href: `mailto:${siteConfig.email}`, icon: <FiMail /> },
+  ];
   return (
-    <section id="contato" className="bg-porcelain py-20">
-      <div className="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Contato
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Solicite seu orçamento
-          </h2>
-          <p className="mt-5 max-w-2xl leading-8 text-coffee">
-            Fale pelo WhatsApp para explicar o que deseja produzir. Com uma
-            referência e medidas aproximadas, o atendimento consegue entender
-            melhor a peça ideal para o seu ambiente.
-          </p>
-          <ul className="mt-5 space-y-2 text-coffee">
-            <li>• Foto ou referência do modelo desejado</li>
-            <li>• Medidas aproximadas do ambiente</li>
-            <li>• Tipo de peça: cama, cabeceira, recamier, puff ou estofado</li>
-          </ul>
-          <a
-            href={getWhatsAppLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex rounded-md bg-coffee px-5 py-3 font-semibold text-porcelain transition hover:bg-ink"
-          >
-            Solicitar orçamento agora
-          </a>
-        </div>
-
-        <div className="rounded-lg border border-line bg-cream p-6 shadow-sm sm:p-8">
-          <dl className="space-y-5 text-coffee">
-            <div>
-              <dt className="font-semibold text-ink">Empresa</dt>
-              <dd className="mt-1 break-words">{siteConfig.businessName}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">WhatsApp</dt>
-              <dd className="mt-1 break-words">
-                <a className="underline decoration-caramel underline-offset-4" href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
-                  {siteConfig.whatsappDisplay}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">Telefone comercial</dt>
-              <dd className="mt-1 break-words">
-                <a className="underline decoration-caramel underline-offset-4" href={`tel:+${siteConfig.commercialPhone}`}>
-                  {siteConfig.commercialPhoneDisplay}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">Instagram</dt>
-              <dd className="mt-1 break-words">
-                <a className="underline decoration-caramel underline-offset-4" href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer">
-                  {siteConfig.instagramHandle}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">E-mail</dt>
-              <dd className="mt-1 break-words">
-                <a className="underline decoration-caramel underline-offset-4" href={`mailto:${siteConfig.email}`}>
-                  {siteConfig.email}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">Região</dt>
-              <dd className="mt-1 break-words">{siteConfig.serviceRegion}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-ink">Horário</dt>
-              <dd className="mt-1 break-words">{siteConfig.openingHours}</dd>
-            </div>
-          </dl>
-        </div>
+    <section id="contato" className="bg-porcelain py-20 sm:py-28">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]"><div><p className="editorial-label text-caramel">Vamos conversar</p><h2 className="font-display mt-4 max-w-lg text-5xl font-medium leading-[0.92] sm:text-7xl">Seu próximo projeto pode começar por uma mensagem.</h2><p className="mt-8 max-w-md text-sm leading-7 text-coffee">Envie uma foto do ambiente ou uma referência do que procura. Retornamos durante o horário de atendimento.</p><a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="mt-10 inline-flex min-h-12 items-center gap-3 bg-caramel px-6 text-sm font-semibold text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a></div><div className="border-t border-line">{contacts.map((contact) => <a key={contact.label} href={contact.href} target={contact.href.startsWith("http") ? "_blank" : undefined} rel={contact.href.startsWith("http") ? "noreferrer" : undefined} className="group grid grid-cols-[28px_1fr_auto] items-center gap-4 border-b border-line py-6"><span className="text-caramel" aria-hidden="true">{contact.icon}</span><span><span className="editorial-label block text-coffee">{contact.label}</span><span className="mt-1 block break-all font-display text-xl sm:text-2xl">{contact.value}</span></span><FiArrowUpRight className="text-coffee transition group-hover:text-caramel" aria-hidden="true" /></a>)}<div className="grid grid-cols-2 gap-5 border-b border-line py-6"><div><p className="editorial-label text-coffee">Região</p><p className="mt-2 text-sm">{siteConfig.serviceRegion}</p></div><div><p className="editorial-label text-coffee">Horário</p><p className="mt-2 text-sm">{siteConfig.openingHours}</p></div></div></div></div>
       </div>
     </section>
   );

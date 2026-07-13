@@ -1,85 +1,23 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import { portfolioItems } from "../data/portfolio";
-import { getWhatsAppLink } from "../utils/whatsapp";
 
 export function Portfolio() {
   return (
-    <section id="projetos" className="bg-cream py-20">
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-caramel">
-            Inspirações
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Referências para camas e cabeceiras sob medida
-          </h2>
-          <p className="mt-4 leading-7 text-coffee">
-            Estas imagens são ilustrativas e ajudam a orientar a conversa inicial.
-            Os projetos reais serão inseridos após o envio das fotos da empresa.
-          </p>
+    <section id="projetos" className="bg-porcelain py-16 sm:py-20 lg:py-6">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-7 border-b border-line pb-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:pb-4">
+          <div><p className="editorial-label text-caramel">Referências de projeto</p><h2 className="font-display mt-3 max-w-2xl text-4xl font-medium leading-[0.94] tracking-[-0.035em] sm:text-5xl lg:text-4xl">Um quarto com identidade começa nos detalhes.</h2></div>
+          <p className="max-w-lg text-sm leading-7 text-coffee lg:justify-self-end">Explore caminhos de composição para camas e cabeceiras. Cada projeto é avaliado e definido conforme o ambiente e a preferência do cliente.</p>
         </div>
-
-        <div className="mt-12 grid gap-7 lg:grid-cols-2">
-          {portfolioItems.map((item) => (
-            <article
-              key={item.id}
-              className="overflow-hidden rounded-lg border border-line bg-porcelain shadow-sm"
-            >
-              <div className="relative h-72 overflow-hidden bg-linen">
-                <img
-                  src={item.image}
-                  alt={item.imageAlt}
-                  width="1536"
-                  height="1024"
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover"
-                />
-                <span className="absolute bottom-4 left-4 rounded-md bg-cream/95 px-3 py-2 text-xs font-semibold uppercase text-coffee">
-                  Imagem ilustrativa
-                </span>
-              </div>
-              <div className="p-6 sm:p-7">
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-caramel">
-                  {item.category}
-                </p>
-                <h3 className="mt-3 text-2xl font-semibold text-ink">
-                  {item.title}
-                </h3>
-                <p className="mt-3 leading-7 text-coffee">{item.description}</p>
-                <p className="mt-5 border-l-2 border-caramel bg-cream p-4 text-sm leading-6 text-coffee">
-                  {item.highlight}
-                </p>
-                <a
-                  href={getWhatsAppLink(`Olá, gostaria de solicitar um orçamento inspirado no projeto ${item.title}.`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex rounded-md bg-coffee px-5 py-3 font-semibold text-porcelain transition hover:bg-ink"
-                >
-                  Quero um orçamento parecido
-                </a>
-              </div>
+        <div className="grid gap-px bg-line lg:grid-cols-3">
+          {portfolioItems.map((item, index) => (
+            <article key={item.id} className="group bg-porcelain py-8 lg:px-6 lg:py-4 first:pl-0 last:pr-0">
+              <div className="image-wash aspect-[4/5] overflow-hidden lg:aspect-[2.2/1]"><img src={item.image} alt={item.imageAlt} className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" /></div>
+              <div className="mt-5 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">{String(index + 1).padStart(2, "0")} / {item.category}</p><h3 className="font-display mt-2 text-3xl font-medium">{item.title}</h3></div><FiArrowUpRight className="mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>
+              <p className="mt-4 text-sm leading-6 text-coffee lg:hidden">{item.description}</p>
+              <p className="mt-4 text-[0.62rem] uppercase tracking-[0.12em] text-coffee lg:mt-2">Imagem ilustrativa</p>
             </article>
           ))}
-        </div>
-
-        <div className="mt-10 rounded-lg border border-line bg-porcelain p-6 shadow-sm sm:flex sm:items-center sm:justify-between sm:gap-6">
-          <div>
-            <h3 className="text-xl font-semibold text-ink">
-              Gostou de algum estilo?
-            </h3>
-            <p className="mt-2 leading-7 text-coffee">
-              Envie a referência pelo WhatsApp e conte se busca cama,
-              cabeceira, recamier, puff ou outro estofado personalizado.
-            </p>
-          </div>
-          <a
-            href={getWhatsAppLink("Olá, vi os projetos do portfólio e gostaria de solicitar um orçamento. Posso enviar uma referência e medidas aproximadas?")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 inline-flex shrink-0 rounded-md bg-coffee px-5 py-3 font-semibold text-porcelain transition hover:bg-ink sm:mt-0"
-          >
-            Enviar referência
-          </a>
         </div>
       </div>
     </section>
