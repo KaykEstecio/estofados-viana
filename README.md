@@ -59,9 +59,17 @@ npm run dev
 
 ## Como validar o build
 
-Execute:
+Execute a validação completa (lint, testes e build):
 
 ```powershell
+npm run check
+```
+
+Ou execute cada etapa separadamente:
+
+```powershell
+npm run lint
+npm run test
 npm run build
 ```
 

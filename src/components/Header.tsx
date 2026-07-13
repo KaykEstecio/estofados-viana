@@ -1,5 +1,6 @@
 import { siteConfig } from "../data/siteConfig";
 import { getWhatsAppLink } from "../utils/whatsapp";
+import { BrandLogo } from "./BrandLogo";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navigationItems = [
@@ -19,8 +20,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-porcelain/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
-        <a href="#inicio" className="min-w-0 text-base font-semibold text-ink sm:text-lg">
-          {siteConfig.businessName}
+        <a href="#inicio" aria-label={`${siteConfig.businessName} — início`} className="min-w-0">
+          <BrandLogo />
         </a>
 
         <nav
