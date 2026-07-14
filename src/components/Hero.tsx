@@ -10,15 +10,16 @@ export function Hero() {
           <span className="editorial-label [writing-mode:vertical-rl] rotate-180 text-coffee">Grande São Paulo</span>
           <FiArrowDownRight className="text-xl text-caramel" aria-hidden="true" />
         </div>
-        <div className="flex flex-col justify-center px-5 py-16 sm:px-10 lg:px-12 lg:py-8">
-          <p className="editorial-label mb-8 text-caramel lg:mb-5">Feito para o seu espaço</p>
-          <h1 className="font-display max-w-[620px] text-[3.35rem] font-medium leading-[0.89] tracking-[-0.045em] text-ink sm:text-[4.6rem] lg:text-[4.15rem]">
-            Especialistas em camas e cabeceiras personalizadas
+        <div className="flex flex-col justify-center px-5 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-8">
+          <p className="editorial-label mb-4 text-caramel lg:mb-3">Especialistas em cabeceiras</p>
+          <h1 className="font-display max-w-[620px] text-[2.8rem] font-medium leading-[0.88] tracking-[-0.04em] text-ink min-[380px]:text-[3.05rem] sm:text-[4.35rem] lg:text-[4.05rem]">
+            <span className="block">Camas e cabeceiras</span>
+            <span className="mt-1 block text-[0.88em] font-normal italic tracking-[-0.025em] text-caramel">sob medida</span>
           </h1>
-          <p className="mt-8 max-w-lg text-base leading-7 text-coffee lg:mt-5">
-            Projetos sob medida para transformar o quarto em um ambiente mais confortável, elegante e alinhado ao seu estilo.
+          <p className="mt-5 max-w-lg text-[0.94rem] leading-7 text-coffee lg:mt-4">
+            Peças personalizadas para transformar o quarto em um ambiente confortável, elegante e alinhado ao seu estilo.
           </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center lg:mt-7">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-6">
             <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white transition-opacity hover:opacity-90">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
@@ -27,7 +28,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <figure className="image-wash relative min-h-[430px] border-t border-line lg:min-h-full lg:border-l lg:border-t-0">
+        <figure className="image-wash relative min-h-[360px] border-t border-line sm:min-h-[420px] lg:min-h-full lg:border-l lg:border-t-0">
           <img src="/images/real/hero-cama-couro.jpeg" alt="Quarto decorado com cama estofada em tom caramelo" className="absolute inset-0 h-full w-full object-cover object-center" />
           <figcaption className="absolute bottom-5 right-5 z-10 bg-[#f5f0e9]/90 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#302720]">Imagem ilustrativa</figcaption>
         </figure>
