@@ -28,7 +28,7 @@ export function Hero() {
           </div>
         </div>
         <figure className="image-wash relative min-h-[430px] border-t border-line lg:min-h-full lg:border-l lg:border-t-0">
-          <img src="/images/hero/aconche-hero-editorial.png" alt="Quarto elegante com cama e cabeceira estofadas em tons naturais" className="absolute inset-0 h-full w-full object-cover" />
+          <img src="/images/real/hero-cama-couro.jpeg" alt="Quarto decorado com cama estofada em tom caramelo" className="absolute inset-0 h-full w-full object-cover object-center" />
           <figcaption className="absolute bottom-5 right-5 z-10 bg-[#f5f0e9]/90 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#302720]">Imagem ilustrativa</figcaption>
         </figure>
       </div>

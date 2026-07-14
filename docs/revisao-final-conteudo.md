@@ -7,10 +7,11 @@
 - Valores informados como personalizados, sem preço fictício ou promessa comercial não confirmada.
 - Prazo de produção informado como dependente da avaliação de cada projeto.
 - Entrega ou instalação informada como item combinado durante o atendimento.
-- Todas as fotografias conceituais estão identificadas no site como imagens ilustrativas.
-- Imagem de compartilhamento e preload atualizados para o hero editorial atual.
+- Oito fotografias fornecidas pela empresa foram selecionadas e integradas à capa, aos projetos, às categorias e à apresentação institucional.
+- A imagem conceitual da capa continua identificada como ilustrativa; as demais usam legendas neutras de projeto e acabamento.
+- Imagem de compartilhamento e preload atualizados para a fotografia atual da capa.
 
-## Antes de publicar fotografias reais
+## Cuidados para manter nas próximas fotografias
 
 1. Obter autorização do cliente e do fotógrafo para uso comercial no site e nas redes sociais.
 2. Evitar imagens que revelem endereço, documentos, pessoas ou outros dados particulares sem autorização específica.
