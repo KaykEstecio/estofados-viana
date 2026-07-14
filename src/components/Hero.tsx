@@ -30,7 +30,7 @@ export function Hero() {
         </div>
         <figure className="image-wash relative min-h-[360px] border-t border-line sm:min-h-[420px] lg:min-h-full lg:border-l lg:border-t-0">
           <img src="/images/real/hero-cama-couro.jpeg" alt="Quarto decorado com cama estofada em tom caramelo" className="absolute inset-0 h-full w-full object-cover object-center" />
-          <figcaption className="absolute bottom-5 right-5 z-10 bg-[#f5f0e9]/90 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#302720]">Imagem ilustrativa</figcaption>
+          <figcaption className="absolute bottom-5 right-5 z-10 bg-cream/90 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-ink">Imagem ilustrativa</figcaption>
         </figure>
       </div>
     </section>

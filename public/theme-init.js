@@ -5,4 +5,5 @@
 
   document.documentElement.classList.toggle("dark", useDark);
   document.documentElement.style.colorScheme = useDark ? "dark" : "light";
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", useDark ? "#2E2E2E" : "#F7F4EF");
 })();

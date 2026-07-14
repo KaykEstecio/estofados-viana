@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --color-cream: 245 240 233;
-  --color-ink: 28 24 21;
-  --color-coffee: 82 70 61;
-  --color-caramel: 165 73 38;
-  --color-linen: 225 215 202;
-  --color-porcelain: 251 248 243;
-  --color-line: 205 195 182;
+  --color-cream: 247 244 239;
+  --color-ink: 46 46 46;
+  --color-coffee: 74 53 40;
+  --color-caramel: 181 109 71;
+  --color-linen: 216 196 176;
+  --color-porcelain: 247 244 239;
+  --color-line: 216 196 176;
 }
 
 :root.dark {
-  --color-cream: 28 25 23;
-  --color-ink: 247 240 230;
-  --color-coffee: 207 194 180;
-  --color-caramel: 216 112 69;
-  --color-linen: 58 51 46;
-  --color-porcelain: 35 31 28;
-  --color-line: 79 70 63;
+  --color-cream: 46 46 46;
+  --color-ink: 247 244 239;
+  --color-coffee: 216 196 176;
+  --color-caramel: 181 109 71;
+  --color-linen: 74 53 40;
+  --color-porcelain: 46 46 46;
+  --color-line: 74 53 40;
 }
 
 html {
@@ -32,7 +32,7 @@ body {
   min-width: 320px;
   background: rgb(var(--color-cream));
   color: rgb(var(--color-ink));
-  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -40,7 +40,7 @@ body {
 
 ::selection {
   background: rgb(var(--color-caramel));
-  color: #fffaf4;
+  color: #f7f4ef;
 }
 
 img { display: block; }
