@@ -16,9 +16,9 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Categories />
         <Portfolio />
         <Process />
-        <Categories />
         <CustomProjects />
         <Services />
         <About />

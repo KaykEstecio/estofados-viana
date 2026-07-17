@@ -23,8 +23,8 @@ export function Hero() {
             <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white transition-opacity hover:opacity-90">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
-            <a href="#projetos" className="inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
-              Ver projetos <FiArrowUpRight aria-hidden="true" />
+            <a href="#modelos" className="inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
+              Ver modelos <FiArrowUpRight aria-hidden="true" />
             </a>
           </div>
         </div>

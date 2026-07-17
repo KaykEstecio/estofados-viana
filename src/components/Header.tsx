@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 const links = [
-  ["Início", "#inicio"], ["Projetos", "#projetos"], ["Camas", "#categorias"],
+  ["Início", "#inicio"], ["O que fazemos", "#o-que-fazemos"], ["Modelos", "#modelos"],
   ["Sob Medida", "#sob-medida"], ["Sobre", "#sobre"], ["Contato", "#contato"],
 ];
 
