@@ -6,7 +6,7 @@ import { getWhatsAppLink } from "../utils/whatsapp";
 
 const links = [
   ["Início", "/"], ["O que fazemos", "/o-que-fazemos"], ["Modelos", "/modelos"],
-  ["Sob Medida", "/sob-medida"], ["Sobre", "/sobre"], ["Contato", "/contato"],
+  ["Projetos", "/projetos"], ["Sob Medida", "/sob-medida"], ["Sobre", "/sobre"], ["Contato", "/contato"],
 ];
 
 export function Header() {
@@ -14,7 +14,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-line bg-cream/95 backdrop-blur-md">
       <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-5 sm:h-[76px] sm:px-8 lg:px-12">
         <BrandLogo />
-        <nav aria-label="Navegação principal" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Navegação principal" className="hidden items-center gap-5 xl:gap-6 lg:flex">
           {links.map(([label, href]) => <NavLink key={href} to={href} end={href === "/"} className={({ isActive }) => `border-b pb-1 text-[0.72rem] font-semibold uppercase tracking-[0.12em] transition-colors hover:text-caramel ${isActive ? "border-caramel text-caramel" : "border-transparent text-coffee"}`}>{label}</NavLink>)}
         </nav>
         <div className="flex items-center gap-3">

@@ -5,6 +5,7 @@ const pageTitles: Record<string, string> = {
   "/": "Aconche Decor | Estofados sob medida",
   "/o-que-fazemos": "O que fazemos | Aconche Decor",
   "/modelos": "Modelos | Aconche Decor",
+  "/projetos": "Projetos realizados | Aconche Decor",
   "/sob-medida": "Sob medida | Aconche Decor",
   "/sobre": "Sobre | Aconche Decor",
   "/contato": "Contato | Aconche Decor",

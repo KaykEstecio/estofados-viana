@@ -4,13 +4,15 @@ import { About } from "../components/About";
 import { Categories } from "../components/Categories";
 import { Contact } from "../components/Contact";
 import { CustomProjects } from "../components/CustomProjects";
+import { FeaturedModels } from "../components/FeaturedModels";
 import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Process } from "../components/Process";
+import { Projects } from "../components/Projects";
 import { Services } from "../components/Services";
 
 export function HomePage() {
-  return <><Hero /><Categories /><Portfolio /><Process /><CustomProjects /><Services /><About /><Contact /></>;
+  return <><Hero /><FeaturedModels /><Categories /><Process /><CustomProjects /><Services /><About /><Contact /></>;
 }
 
 export function WhatWeDoPage() {
@@ -19,6 +21,10 @@ export function WhatWeDoPage() {
 
 export function ModelsPage() {
   return <Portfolio asPage />;
+}
+
+export function ProjectsPage() {
+  return <Projects asPage />;
 }
 
 export function CustomPage() {

@@ -3,7 +3,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { RouteEffects } from "./components/RouteEffects";
 import { WhatsAppButton } from "./components/WhatsAppButton";
-import { AboutPage, ContactPage, CustomPage, HomePage, ModelsPage, NotFoundPage, WhatWeDoPage } from "./pages/SitePages";
+import { AboutPage, ContactPage, CustomPage, HomePage, ModelsPage, NotFoundPage, ProjectsPage, WhatWeDoPage } from "./pages/SitePages";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/o-que-fazemos" element={<WhatWeDoPage />} />
           <Route path="/modelos" element={<ModelsPage />} />
+          <Route path="/projetos" element={<ProjectsPage />} />
           <Route path="/sob-medida" element={<CustomPage />} />
           <Route path="/sobre" element={<AboutPage />} />
           <Route path="/contato" element={<ContactPage />} />
