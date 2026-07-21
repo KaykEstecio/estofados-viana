@@ -1,28 +1,25 @@
-import { About } from "./components/About";
-import { Categories } from "./components/Categories";
-import { Contact } from "./components/Contact";
-import { CustomProjects } from "./components/CustomProjects";
+import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Portfolio } from "./components/Portfolio";
-import { Process } from "./components/Process";
-import { Services } from "./components/Services";
+import { RouteEffects } from "./components/RouteEffects";
 import { WhatsAppButton } from "./components/WhatsAppButton";
+import { AboutPage, ContactPage, CustomPage, HomePage, ModelsPage, NotFoundPage, WhatWeDoPage } from "./pages/SitePages";
 
 function App() {
   return (
     <>
+      <RouteEffects />
       <Header />
       <main>
-        <Hero />
-        <Categories />
-        <Portfolio />
-        <Process />
-        <CustomProjects />
-        <Services />
-        <About />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/o-que-fazemos" element={<WhatWeDoPage />} />
+          <Route path="/modelos" element={<ModelsPage />} />
+          <Route path="/sob-medida" element={<CustomPage />} />
+          <Route path="/sobre" element={<AboutPage />} />
+          <Route path="/contato" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </main>
       <Footer />
       <WhatsAppButton />

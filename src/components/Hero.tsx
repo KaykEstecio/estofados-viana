@@ -1,5 +1,6 @@
 import { FiArrowDownRight, FiArrowUpRight } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 export function Hero() {
@@ -23,9 +24,9 @@ export function Hero() {
             <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white transition-opacity hover:opacity-90">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
-            <a href="#modelos" className="inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
+            <Link to="/modelos" className="inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
               Ver modelos <FiArrowUpRight aria-hidden="true" />
-            </a>
+            </Link>
           </div>
         </div>
         <figure className="image-wash relative min-h-[360px] border-t border-line sm:min-h-[420px] lg:min-h-full lg:border-l lg:border-t-0">

@@ -3,12 +3,16 @@ import { FaWhatsapp } from "react-icons/fa";
 import { portfolioItems } from "../data/portfolio";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
-export function Portfolio() {
+type PortfolioProps = { asPage?: boolean };
+
+export function Portfolio({ asPage = false }: PortfolioProps) {
+  const Heading = asPage ? "h1" : "h2";
+
   return (
     <section id="modelos" className="bg-porcelain py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="grid gap-7 border-b border-line pb-8 lg:grid-cols-[1fr_1fr] lg:items-end">
-          <div><p className="editorial-label text-caramel">Modelos e referências</p><h2 className="font-display mt-3 max-w-2xl text-4xl font-medium leading-[0.94] tracking-[-0.035em] sm:text-5xl lg:text-6xl">Encontre o estilo que combina com o seu ambiente.</h2></div>
+          <div><p className="editorial-label text-caramel">Modelos e referências</p><Heading className="font-display mt-3 max-w-2xl text-4xl font-medium leading-[0.94] tracking-[-0.035em] sm:text-5xl lg:text-6xl">Encontre o estilo que combina com o seu ambiente.</Heading></div>
           <p className="max-w-lg text-sm leading-7 text-coffee lg:justify-self-end">Use estas referências como ponto de partida. Medidas, tecido, cor e acabamento são definidos com você no momento do orçamento.</p>
         </div>
         <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-3">

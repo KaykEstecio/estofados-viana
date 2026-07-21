@@ -1,13 +1,17 @@
 import { FiArrowRight } from "react-icons/fi";
 import { categories } from "../data/categories";
 
-export function Categories() {
+type CategoriesProps = { asPage?: boolean };
+
+export function Categories({ asPage = false }: CategoriesProps) {
+  const Heading = asPage ? "h1" : "h2";
+
   return (
     <section id="o-que-fazemos" className="py-20 sm:py-28">
       <div className="mx-auto grid max-w-[1440px] gap-14 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-12">
         <div>
           <p className="editorial-label text-caramel">O que fazemos</p>
-          <h2 className="font-display mt-4 max-w-xl text-5xl font-medium leading-[0.95] tracking-[-0.03em] sm:text-6xl">Peças pensadas para caber na sua rotina.</h2>
+          <Heading className="font-display mt-4 max-w-xl text-5xl font-medium leading-[0.95] tracking-[-0.03em] sm:text-6xl">Peças pensadas para caber na sua rotina.</Heading>
           <p className="mt-6 max-w-xl text-sm leading-7 text-coffee">Criamos camas, cabeceiras, painéis e outros estofados sob medida. Cada peça é desenvolvida para o espaço, o estilo e a necessidade de cada cliente.</p>
           <div className="mt-12 border-t border-line">
             {categories.map((category, index) => <div key={category.title} className="grid grid-cols-[40px_1fr_auto] items-start gap-3 border-b border-line py-5"><span className="editorial-label pt-1 text-caramel">{String(index + 1).padStart(2, "0")}</span><div><h3 className="font-display text-2xl font-medium">{category.title}</h3><p className="mt-2 max-w-xl text-sm leading-6 text-coffee">{category.description}</p></div><FiArrowRight className="mt-2 text-coffee" aria-hidden="true" /></div>)}
