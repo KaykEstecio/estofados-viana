@@ -1,22 +1,30 @@
 import { FiArrowLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { About } from "../components/About";
-import { Categories } from "../components/Categories";
 import { Contact } from "../components/Contact";
 import { CustomProjects } from "../components/CustomProjects";
 import { FeaturedModels } from "../components/FeaturedModels";
 import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Process } from "../components/Process";
+import { ProductCategoryPage } from "../components/ProductCategoryPage";
 import { Projects } from "../components/Projects";
-import { Services } from "../components/Services";
+import { portfolioItems } from "../data/portfolio";
 
 export function HomePage() {
-  return <><Hero /><FeaturedModels /><Categories /><Process /><CustomProjects /><Services /><About /><Contact /></>;
+  return <><Hero /><FeaturedModels /></>;
 }
 
-export function WhatWeDoPage() {
-  return <><Categories asPage /><Services /></>;
+export function BedsPage() {
+  return <ProductCategoryPage label="Camas sob medida" title="Camas pensadas para o seu espaço." description="Escolha uma referência e personalize medidas, tecido, cor e acabamento para criar uma cama coerente com o seu quarto." heroImage="/images/real/cama-estofada-base.jpeg" heroAlt="Cama estofada clara com linhas arredondadas" items={portfolioItems.filter((item) => item.category === "Camas")} details={["Medidas adaptadas ao quarto.", "Tecidos e cores escolhidos com você.", "Base e cabeceira podem formar um único conjunto."]} />;
+}
+
+export function HeadboardsPage() {
+  return <ProductCategoryPage label="Cabeceiras e painéis" title="Cabeceiras que transformam a parede." description="Modelos lineares, modulares ou com desenhos personalizados para acompanhar a proporção e a identidade do ambiente." heroImage="/images/real/projeto-painel-espelhos.jpeg" heroAlt="Painel estofado vertical instalado entre espelhos" items={portfolioItems.filter((item) => item.category === "Cabeceiras" || item.category === "Painéis estofados")} details={["Altura e largura definidas para a parede.", "Desenhos modulares, verticais ou geométricos.", "Integração possível com iluminação e marcenaria."]} />;
+}
+
+export function OttomansPage() {
+  return <ProductCategoryPage label="Puffs e banquetas" title="Apoio, conforto e acabamento sob medida." description="Puffs, banquetas e recamiers desenvolvidos para complementar quartos, closets, salas e outros ambientes." heroImage="/images/real/sofa-estofado-cinza.jpeg" heroAlt="Estofado cinza com acabamento macio em ambiente residencial" items={[]} details={["Dimensões adequadas ao uso e ao espaço.", "Opções de tecidos, cores e densidades.", "Desenho alinhado aos demais estofados do ambiente."]} />;
 }
 
 export function ModelsPage() {
@@ -28,6 +36,10 @@ export function ProjectsPage() {
 }
 
 export function CustomPage() {
+  return <><CustomProjects asPage /><Process /></>;
+}
+
+export function QualityPage() {
   return <><CustomProjects asPage /><Process /></>;
 }
 

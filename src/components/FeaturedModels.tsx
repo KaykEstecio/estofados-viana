@@ -4,6 +4,10 @@ import { portfolioItems } from "../data/portfolio";
 
 const featuredModels = portfolioItems.slice(0, 5);
 
+function getModelRoute(category: string) {
+  return category === "Camas" ? "/camas" : "/cabeceiras";
+}
+
 export function FeaturedModels() {
   return (
     <section aria-labelledby="modelos-inicio" className="border-b border-line bg-porcelain py-12 sm:py-16">
@@ -17,7 +21,7 @@ export function FeaturedModels() {
         </div>
         <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-5">
           {featuredModels.map((model, index) => (
-            <Link key={model.id} to="/modelos" className={`group relative overflow-hidden bg-line ${index === 0 ? "col-span-2 md:col-span-1" : ""}`}>
+            <Link key={model.id} to={getModelRoute(model.category)} className={`group relative overflow-hidden bg-line ${index === 0 ? "col-span-2 md:col-span-1" : ""}`}>
               <img src={model.image} alt={model.imageAlt} className="aspect-[4/3] h-full min-h-[170px] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:aspect-[3/4] md:min-h-[260px]" />
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-3 pb-3 pt-12 text-white">
                 <span className="block text-[0.56rem] font-semibold uppercase tracking-[0.13em] text-white/75">{model.category}</span>
