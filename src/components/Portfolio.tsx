@@ -17,7 +17,7 @@ export function Portfolio({ asPage = false }: PortfolioProps) {
         </div>
         <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-3">
           {portfolioItems.map((item, index) => (
-            <article key={item.id} className="group flex h-full flex-col bg-porcelain px-0 py-8 md:px-6 md:first:pl-0 xl:[&:nth-child(3n+1)]:pl-0 xl:[&:nth-child(3n)]:pr-0">
+            <article key={item.id} className="motion-card group flex h-full flex-col bg-porcelain px-0 py-8 md:px-6 md:first:pl-0 xl:[&:nth-child(3n+1)]:pl-0 xl:[&:nth-child(3n)]:pr-0">
               <div className="image-wash aspect-[4/3] overflow-hidden"><img src={item.image} alt={item.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" /></div>
               <div className="mt-5 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">{String(index + 1).padStart(2, "0")} / {item.category}</p><h3 className="font-display mt-2 text-3xl font-medium">{item.title}</h3></div><FiArrowUpRight className="mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>
               <p className="mt-4 text-sm leading-6 text-coffee">{item.description}</p>

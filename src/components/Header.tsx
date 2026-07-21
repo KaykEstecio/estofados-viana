@@ -33,7 +33,7 @@ export function Header() {
         </div>
       </div>
       {menuOpen ? (
-        <div id="menu-mobile" className="fixed inset-0 z-50 flex min-h-dvh flex-col bg-cream px-5 py-4 xl:hidden">
+        <div id="menu-mobile" className="mobile-menu-enter fixed inset-0 z-[60] flex min-h-dvh flex-col bg-cream px-5 py-4 xl:hidden">
           <div className="flex items-center justify-between">
             <BrandLogo />
             <button type="button" onClick={() => setMenuOpen(false)} aria-label="Fechar menu" className="grid size-11 place-items-center text-3xl text-ink"><FiX aria-hidden="true" /></button>
