@@ -7,9 +7,9 @@ import { NavLink } from "react-router-dom";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 const links = [
-  ["Início", "/"], ["Camas", "/camas"], ["Cabeceiras", "/cabeceiras"],
-  ["Puffs & Banquetas", "/puffs-e-banquetas"], ["Projetos", "/projetos"],
-  ["Qualidade", "/qualidade"], ["Contato", "/contato"],
+  ["Início", "/"], ["O que fazemos", "/o-que-fazemos"], ["Modelos", "/modelos"],
+  ["Projetos", "/projetos"], ["Sob medida", "/sob-medida"], ["Sobre", "/sobre"],
+  ["Contato", "/contato"],
 ];
 
 export function Header() {

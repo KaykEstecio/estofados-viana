@@ -32,4 +32,28 @@ export const projectItems: ProjectItem[] = [
     image: "/images/real/projeto-painel-espelhos.jpeg",
     imageAlt: "Projeto realizado de painel estofado vertical entre espelhos",
   },
+  {
+    id: "cabeceira-curva-com-led",
+    title: "Cabeceira curva com LED",
+    category: "Cabeceira instalada",
+    description: "Cabeceira ampla de cantos arredondados, iluminação indireta superior e mesas laterais integradas.",
+    image: "/images/real/projeto-cabeceira-curva.jpeg",
+    imageAlt: "Projeto realizado de cabeceira curva com iluminação e mesas laterais",
+  },
+  {
+    id: "quarto-cabeceira-curva",
+    title: "Quarto com cabeceira curva",
+    category: "Projeto concluído",
+    description: "Vista do conjunto pronto, mostrando a proporção da cabeceira estofada em relação à cama e à parede.",
+    image: "/images/real/projeto-quarto-cabeceira-curva.jpeg",
+    imageAlt: "Quarto finalizado com cama e cabeceira estofada curva",
+  },
+  {
+    id: "cabeceira-vertical-led",
+    title: "Cabeceira vertical com LED",
+    category: "Cabeceira instalada",
+    description: "Painel de módulos verticais instalado de parede a parede, com iluminação indireta no acabamento superior.",
+    image: "/images/real/cabeceira-vertical-led.jpeg",
+    imageAlt: "Projeto realizado de cabeceira vertical com iluminação indireta",
+  },
 ];

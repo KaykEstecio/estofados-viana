@@ -1,6 +1,7 @@
 import { FiArrowLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { About } from "../components/About";
+import { Categories } from "../components/Categories";
 import { Contact } from "../components/Contact";
 import { CustomProjects } from "../components/CustomProjects";
 import { FeaturedModels } from "../components/FeaturedModels";
@@ -9,10 +10,15 @@ import { Portfolio } from "../components/Portfolio";
 import { Process } from "../components/Process";
 import { ProductCategoryPage } from "../components/ProductCategoryPage";
 import { Projects } from "../components/Projects";
+import { Services } from "../components/Services";
 import { portfolioItems } from "../data/portfolio";
 
 export function HomePage() {
   return <><Hero /><FeaturedModels /></>;
+}
+
+export function WhatWeDoPage() {
+  return <><Categories asPage /><Services /></>;
 }
 
 export function BedsPage() {

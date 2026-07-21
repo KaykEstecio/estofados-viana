@@ -17,10 +17,10 @@ export function Projects({ asPage = false }: ProjectsProps) {
           </div>
           <p className="max-w-lg text-sm leading-7 text-coffee lg:justify-self-end">Aqui ficam os ambientes e peças já executados pela Aconche Decor. Esta seleção será ampliada conforme novos projetos forem concluídos.</p>
         </div>
-        <div className="grid gap-px bg-line md:grid-cols-3">
+        <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-3">
           {projectItems.map((project, index) => (
             <article key={project.id} className="bg-porcelain py-8 md:px-6 md:first:pl-0 md:last:pr-0">
-              <div className="image-wash aspect-[4/5] overflow-hidden"><img src={project.image} alt={project.imageAlt} className="h-full w-full object-cover" /></div>
+              <div className="image-wash aspect-[4/5] overflow-hidden"><img src={project.image} alt={project.imageAlt} loading="lazy" className="h-full w-full object-cover" /></div>
               <p className="editorial-label mt-5 text-caramel">{String(index + 1).padStart(2, "0")} / {project.category}</p>
               <h2 className="font-display mt-2 text-3xl font-medium">{project.title}</h2>
               <p className="mt-4 text-sm leading-6 text-coffee">{project.description}</p>
