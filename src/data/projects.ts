@@ -41,14 +41,6 @@ export const projectItems: ProjectItem[] = [
     imageAlt: "Projeto realizado de cabeceira curva com iluminação e mesas laterais",
   },
   {
-    id: "quarto-cabeceira-curva",
-    title: "Quarto com cabeceira curva",
-    category: "Projeto concluído",
-    description: "Vista do conjunto pronto, mostrando a proporção da cabeceira estofada em relação à cama e à parede.",
-    image: "/images/real/projeto-quarto-cabeceira-curva.jpeg",
-    imageAlt: "Quarto finalizado com cama e cabeceira estofada curva",
-  },
-  {
     id: "cabeceira-vertical-led",
     title: "Cabeceira vertical com LED",
     category: "Cabeceira instalada",
