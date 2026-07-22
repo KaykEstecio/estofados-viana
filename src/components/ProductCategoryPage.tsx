@@ -22,7 +22,7 @@ export function ProductCategoryPage({ label, title, description, heroImage, hero
             <p className="editorial-label text-caramel">{label}</p>
             <h1 className="font-display mt-4 max-w-xl text-5xl font-medium leading-[0.94] tracking-[-0.035em] sm:text-6xl lg:text-7xl">{title}</h1>
             <p className="mt-7 max-w-lg text-sm leading-7 text-coffee">{description}</p>
-            <a href={getWhatsAppLink(`Olá, gostaria de solicitar um orçamento para ${label.toLowerCase()}.`)} target="_blank" rel="noreferrer" className="mt-9 inline-flex min-h-12 w-fit items-center gap-3 bg-caramel px-6 text-sm font-semibold text-white">
+            <a href={getWhatsAppLink(`Olá, gostaria de solicitar um orçamento para ${label.toLowerCase()}.`)} target="_blank" rel="noreferrer" className="interactive-lift mt-9 inline-flex min-h-12 w-fit items-center gap-3 bg-caramel px-6 text-sm font-semibold text-white">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
           </div>
@@ -53,11 +53,11 @@ export function ProductCategoryPage({ label, title, description, heroImage, hero
           {items.length > 0 ? (
             <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-3">
               {items.map((item, index) => (
-                <article key={item.id} className="group flex h-full flex-col bg-cream py-8 md:px-6 md:first:pl-0 xl:[&:nth-child(3n+1)]:pl-0 xl:[&:nth-child(3n)]:pr-0">
-                  <div className="image-wash aspect-[4/3] overflow-hidden"><img src={item.image} alt={item.imageAlt} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" /></div>
-                  <div className="mt-5 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">Modelo {String(index + 1).padStart(2, "0")}</p><h3 className="font-display mt-2 text-3xl font-medium">{item.title}</h3></div><FiArrowUpRight className="mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>
+                <article key={item.id} className="motion-card group flex h-full flex-col bg-cream py-8 md:px-6 md:first:pl-0 xl:[&:nth-child(3n+1)]:pl-0 xl:[&:nth-child(3n)]:pr-0">
+                  <div className="image-wash aspect-[4/3] overflow-hidden"><img src={item.image} alt={item.imageAlt} loading="lazy" className="h-full w-full object-cover" /></div>
+                  <div className="mt-5 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">Modelo {String(index + 1).padStart(2, "0")}</p><h3 className="font-display mt-2 text-3xl font-medium">{item.title}</h3></div><FiArrowUpRight className="motion-card-arrow mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>
                   <p className="mt-4 text-sm leading-6 text-coffee">{item.description}</p>
-                  <a href={getWhatsAppLink(`Olá, gostei do modelo “${item.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noreferrer" className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 border border-caramel px-4 text-xs font-semibold uppercase tracking-[0.08em] text-caramel transition-colors hover:bg-caramel hover:text-white"><FaWhatsapp aria-hidden="true" /> Orçar este modelo</a>
+                  <a href={getWhatsAppLink(`Olá, gostei do modelo “${item.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noreferrer" className="interactive-lift mt-6 inline-flex min-h-11 items-center justify-center gap-2 border border-caramel px-4 text-xs font-semibold uppercase tracking-[0.08em] text-caramel hover:bg-caramel hover:text-white"><FaWhatsapp aria-hidden="true" /> Orçar este modelo</a>
                 </article>
               ))}
             </div>

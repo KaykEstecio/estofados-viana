@@ -17,8 +17,8 @@ export function ThemeToggle() {
   }
 
   return (
-    <button type="button" role="switch" aria-checked={isDark} aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"} title={isDark ? "Tema claro" : "Tema escuro"} onClick={toggleTheme} className="grid h-10 w-10 shrink-0 place-items-center border border-line bg-transparent text-ink transition-colors hover:border-caramel hover:text-caramel">
-      {isDark ? <FiSun aria-hidden="true" /> : <FiMoon aria-hidden="true" />}
+    <button type="button" role="switch" aria-checked={isDark} aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"} title={isDark ? "Tema claro" : "Tema escuro"} onClick={toggleTheme} className="theme-toggle-motion grid h-10 w-10 shrink-0 place-items-center border border-line bg-transparent text-ink hover:border-caramel hover:text-caramel">
+      {isDark ? <FiSun className="theme-icon-motion" aria-hidden="true" /> : <FiMoon className="theme-icon-motion" aria-hidden="true" />}
     </button>
   );
 }

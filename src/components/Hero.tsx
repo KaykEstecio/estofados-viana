@@ -11,21 +11,21 @@ export function Hero() {
           <span className="editorial-label [writing-mode:vertical-rl] rotate-180 text-coffee">Grande São Paulo</span>
           <FiArrowDownRight className="text-xl text-caramel" aria-hidden="true" />
         </div>
-        <div className="flex flex-col justify-center px-5 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-8">
-          <p className="editorial-label mb-4 text-caramel lg:mb-3">Especialistas em cabeceiras</p>
-          <h1 className="font-display max-w-[620px] text-[2.8rem] font-medium leading-[0.88] tracking-[-0.04em] text-ink min-[380px]:text-[3.05rem] sm:text-[4.35rem] lg:text-[4.05rem]">
+        <div className="hero-copy flex flex-col justify-center px-5 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-8">
+          <p className="hero-motion editorial-label mb-4 text-caramel lg:mb-3">Especialistas em cabeceiras</p>
+          <h1 className="hero-motion font-display max-w-[620px] text-[2.8rem] font-medium leading-[0.88] tracking-[-0.04em] text-ink min-[380px]:text-[3.05rem] sm:text-[4.35rem] lg:text-[4.05rem]">
             <span className="block">Camas e cabeceiras</span>
             <span className="mt-1 block text-[0.88em] font-normal italic tracking-[-0.025em] text-caramel">sob medida</span>
           </h1>
-          <p className="mt-5 max-w-lg text-[0.94rem] leading-7 text-coffee lg:mt-4">
+          <p className="hero-motion mt-5 max-w-lg text-[0.94rem] leading-7 text-coffee lg:mt-4">
             Peças personalizadas para transformar o quarto em um ambiente confortável, elegante e alinhado ao seu estilo.
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-6">
-            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white transition-opacity hover:opacity-90">
+          <div className="hero-motion mt-7 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-6">
+            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="interactive-lift inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white hover:opacity-90">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
-            <Link to="/modelos" className="inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
-              Ver modelos <FiArrowUpRight aria-hidden="true" />
+            <Link to="/modelos" className="arrow-link inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">
+              Ver modelos <FiArrowUpRight className="link-arrow-motion" aria-hidden="true" />
             </Link>
           </div>
         </div>

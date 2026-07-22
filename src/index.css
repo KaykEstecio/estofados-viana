@@ -10,6 +10,10 @@
   --color-linen: 216 196 176;
   --color-porcelain: 247 244 239;
   --color-line: 216 196 176;
+  --motion-fast: 160ms;
+  --motion-base: 280ms;
+  --motion-image: 420ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 :root.dark {
@@ -47,10 +51,9 @@ img { display: block; }
 
 button, a { -webkit-tap-highlight-color: transparent; }
 
-a, button {
-  transition-property: color, background-color, border-color, opacity, transform;
-  transition-duration: 220ms;
-  transition-timing-function: ease-out;
+:focus-visible {
+  outline: 2px solid rgb(var(--color-caramel));
+  outline-offset: 3px;
 }
 
 .font-display { font-family: "Cormorant Garamond", Georgia, serif; }
@@ -75,61 +78,121 @@ a, button {
 .mobile-nav::-webkit-scrollbar { display: none; }
 
 .page-transition {
-  animation: page-enter 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: page-enter var(--motion-base) var(--motion-ease) backwards;
 }
 
-.page-transition > section {
-  animation: section-enter 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
+.hero-motion {
+  animation: hero-item-enter var(--motion-image) var(--motion-ease) backwards;
 }
 
-.page-transition > section:nth-child(2) { animation-delay: 70ms; }
+.hero-copy > .hero-motion:nth-child(2) { animation-delay: 40ms; }
+.hero-copy > .hero-motion:nth-child(3) { animation-delay: 80ms; }
+.hero-copy > .hero-motion:nth-child(4) { animation-delay: 120ms; }
 
 .motion-card {
-  transition: transform 300ms ease, box-shadow 300ms ease;
+  transition: transform var(--motion-base) var(--motion-ease);
 }
 
 .motion-card img {
-  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), filter 300ms ease;
+  transition: transform var(--motion-image) var(--motion-ease);
+}
+
+.motion-card-arrow,
+.link-arrow-motion,
+.contact-link-motion svg,
+.theme-icon-motion {
+  transition: color var(--motion-fast) ease-out, transform var(--motion-fast) ease-out;
+}
+
+.nav-link-motion {
+  position: relative;
+  transition: color var(--motion-fast) ease-out;
+}
+
+.nav-link-motion::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: rgb(var(--color-caramel));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--motion-base) var(--motion-ease);
+}
+
+.nav-link-motion:hover::after,
+.nav-link-motion.is-active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.interactive-lift,
+.contact-link-motion,
+.floating-whatsapp-motion,
+.theme-toggle-motion {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-duration: var(--motion-fast);
+  transition-timing-function: ease-out;
+}
+
+.theme-icon-motion {
+  animation: theme-icon-enter var(--motion-fast) var(--motion-ease) backwards;
 }
 
 .mobile-menu-enter {
-  animation: menu-enter 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: menu-enter var(--motion-base) var(--motion-ease) backwards;
 }
 
 .mobile-menu-enter nav > a {
-  animation: menu-link-enter 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: menu-link-enter 220ms var(--motion-ease) backwards;
 }
 
-.mobile-menu-enter nav > a:nth-child(2) { animation-delay: 35ms; }
-.mobile-menu-enter nav > a:nth-child(3) { animation-delay: 70ms; }
-.mobile-menu-enter nav > a:nth-child(4) { animation-delay: 105ms; }
-.mobile-menu-enter nav > a:nth-child(5) { animation-delay: 140ms; }
-.mobile-menu-enter nav > a:nth-child(6) { animation-delay: 175ms; }
-.mobile-menu-enter nav > a:nth-child(7) { animation-delay: 210ms; }
+.mobile-menu-enter nav > a:nth-child(2) { animation-delay: 20ms; }
+.mobile-menu-enter nav > a:nth-child(3) { animation-delay: 40ms; }
+.mobile-menu-enter nav > a:nth-child(4) { animation-delay: 60ms; }
+.mobile-menu-enter nav > a:nth-child(5) { animation-delay: 80ms; }
+.mobile-menu-enter nav > a:nth-child(6) { animation-delay: 100ms; }
+.mobile-menu-enter nav > a:nth-child(7) { animation-delay: 120ms; }
 
 @media (hover: hover) and (pointer: fine) {
-  .motion-card:hover { transform: translateY(-4px); }
-  .motion-card:hover img { transform: scale(1.025); }
+  .motion-card:hover { transform: translateY(-3px); }
+  .motion-card:hover img { transform: scale(1.02); }
+  .motion-card:hover .motion-card-arrow { transform: translate(2px, -2px); }
+  .arrow-link:hover .link-arrow-motion,
+  .contact-link-motion:hover svg:last-child { transform: translate(2px, -2px); }
+  .interactive-lift:hover { transform: translateY(-1px); }
+  .floating-whatsapp-motion:hover { transform: translateY(-3px); }
 }
+
+.interactive-lift:active,
+.floating-whatsapp-motion:active,
+.theme-toggle-motion:active { transform: scale(0.98); }
 
 @keyframes page-enter {
   from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  to { opacity: 1; transform: none; }
 }
 
-@keyframes section-enter {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes hero-item-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
 }
 
 @keyframes menu-enter {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
 }
 
 @keyframes menu-link-enter {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes theme-icon-enter {
+  from { opacity: 0; transform: rotate(-12deg) scale(0.9); }
+  to { opacity: 1; transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

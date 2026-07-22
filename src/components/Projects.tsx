@@ -29,7 +29,7 @@ export function Projects({ asPage = false }: ProjectsProps) {
         </div>
         <div className="mt-4 flex flex-col justify-between gap-5 border-t border-line pt-8 sm:flex-row sm:items-center">
           <p className="font-display text-2xl">Gostou de alguma solução?</p>
-          <a href={getWhatsAppLink("Olá, vi os projetos realizados e gostaria de conversar sobre uma peça para o meu ambiente.")} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
+          <a href={getWhatsAppLink("Olá, vi os projetos realizados e gostaria de conversar sobre uma peça para o meu ambiente.")} target="_blank" rel="noreferrer" className="interactive-lift inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
         </div>
       </div>
     </section>
