@@ -6,7 +6,7 @@ import { getWhatsAppLink } from "../utils/whatsapp";
 export function Hero() {
   return (
     <section id="inicio" className="border-b border-line">
-      <div className="mx-auto grid max-w-[1440px] lg:min-h-[450px] lg:grid-cols-[60px_480px_1fr] xl:grid-cols-[72px_620px_1fr]">
+      <div className="mx-auto grid max-w-[1440px] lg:min-h-[560px] lg:grid-cols-[60px_500px_1fr] xl:min-h-[620px] xl:grid-cols-[72px_560px_1fr]">
         <div className="hidden border-r border-line lg:flex lg:flex-col lg:items-center lg:justify-between lg:py-10">
           <span className="editorial-label [writing-mode:vertical-rl] rotate-180 text-coffee">Grande São Paulo</span>
           <FiArrowDownRight className="text-xl text-caramel" aria-hidden="true" />
@@ -29,8 +29,8 @@ export function Hero() {
             </Link>
           </div>
         </div>
-        <figure className="image-wash relative min-h-[360px] border-t border-line sm:min-h-[420px] lg:min-h-full lg:border-l lg:border-t-0">
-          <img src="/images/real/hero-cama-couro.jpeg" alt="Quarto decorado com cama estofada em tom caramelo" className="absolute inset-0 h-full w-full object-cover object-center" />
+        <figure className="image-wash relative min-h-[400px] border-t border-line sm:min-h-[480px] lg:min-h-full lg:border-l lg:border-t-0">
+          <img src="/images/real/hero-cama-couro.jpeg" alt="Quarto decorado com cama estofada em tom caramelo" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-center" />
           <figcaption className="absolute bottom-5 right-5 z-10 bg-cream/90 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-ink">Imagem ilustrativa</figcaption>
         </figure>
       </div>

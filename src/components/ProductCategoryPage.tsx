@@ -1,5 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import type { PortfolioItem } from "../data/portfolio";
 import { getWhatsAppLink } from "../utils/whatsapp";
 
@@ -64,7 +65,12 @@ export function ProductCategoryPage({ label, title, description, heroImage, hero
           ) : (
             <div className="grid gap-8 py-12 lg:grid-cols-[1fr_1fr] lg:items-center">
               <h2 className="font-display max-w-xl text-4xl font-medium leading-none sm:text-5xl">Criamos a peça conforme o uso, as medidas e o acabamento desejado.</h2>
-              <p className="max-w-lg text-sm leading-7 text-coffee lg:justify-self-end">A galeria desta categoria será ampliada conforme novos trabalhos forem fotografados. Enquanto isso, envie uma referência pelo WhatsApp para avaliarmos o modelo que você procura.</p>
+              <div className="max-w-lg lg:justify-self-end">
+                <p className="text-sm leading-7 text-coffee">As fotos de referência ficam reunidas na página de modelos, facilitando a comparação de estilos, formatos e acabamentos.</p>
+                <Link to="/modelos" className="arrow-link mt-6 inline-flex items-center gap-2 border-b border-ink pb-2 text-sm font-semibold">
+                  Ver todos os modelos <FiArrowUpRight className="link-arrow-motion" aria-hidden="true" />
+                </Link>
+              </div>
             </div>
           )}
         </div>
