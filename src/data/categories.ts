@@ -10,8 +10,9 @@ export const categories: ProjectCategory[] = [
     title: "Camas Personalizadas",
     description:
       "Camas desenvolvidas sob medida para compor o quarto com conforto, proporção e acabamento alinhados ao ambiente.",
-    image: "/images/real/cama-estofada-base.jpeg",
-    imageAlt: "Estrutura de cama estofada clara com cabeceira arredondada",
+    image: "/images/categories/cama-estofada-quarto-exclusiva.webp",
+    imageAlt:
+      "Cama estofada bege com cabeceira modular instalada em quarto acolhedor",
   },
   {
     title: "Cabeceiras Personalizadas",
