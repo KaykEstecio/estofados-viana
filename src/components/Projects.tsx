@@ -17,15 +17,39 @@ export function Projects({ asPage = false }: ProjectsProps) {
           </div>
           <p className="max-w-lg text-sm leading-7 text-coffee lg:justify-self-end">Aqui ficam os ambientes e peças já executados pela Aconche Decor. Esta seleção será ampliada conforme novos projetos forem concluídos.</p>
         </div>
-        <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-3">
-          {projectItems.map((project, index) => (
-            <article key={project.id} className="motion-card bg-porcelain py-8 md:px-6 md:first:pl-0 md:last:pr-0">
-              <div className="image-wash aspect-[4/5] overflow-hidden"><img src={project.image} alt={project.imageAlt} loading="lazy" className="h-full w-full object-cover" /></div>
-              <p className="editorial-label mt-5 text-caramel">{String(index + 1).padStart(2, "0")} / {project.category}</p>
-              <h2 className="font-display mt-2 text-3xl font-medium">{project.title}</h2>
-              <p className="mt-4 text-sm leading-6 text-coffee">{project.description}</p>
-            </article>
-          ))}
+        <div className="grid gap-px bg-line md:grid-cols-2 xl:grid-cols-6">
+          {projectItems.map((project, index) => {
+            const isTabletOrphan =
+              projectItems.length % 2 === 1 && index === projectItems.length - 1;
+            const isInDesktopFinalPair =
+              projectItems.length % 3 === 2 && index >= projectItems.length - 2;
+
+            return (
+              <article
+                key={project.id}
+                className={`motion-card bg-porcelain p-6 sm:p-7 lg:p-8 ${
+                  isTabletOrphan ? "md:col-span-2" : "md:col-span-1"
+                } ${
+                  isInDesktopFinalPair ? "xl:col-span-3" : "xl:col-span-2"
+                }`}
+              >
+                <div
+                  className={`image-wash overflow-hidden ${
+                    isTabletOrphan
+                      ? "aspect-[16/10] xl:aspect-[4/3]"
+                      : isInDesktopFinalPair
+                        ? "aspect-[4/5] xl:aspect-[4/3]"
+                        : "aspect-[4/5]"
+                  }`}
+                >
+                  <img src={project.image} alt={project.imageAlt} loading="lazy" className="h-full w-full object-cover" />
+                </div>
+                <p className="editorial-label mt-5 text-caramel">{String(index + 1).padStart(2, "0")} / {project.category}</p>
+                <h2 className="font-display mt-2 text-3xl font-medium">{project.title}</h2>
+                <p className="mt-4 text-sm leading-6 text-coffee">{project.description}</p>
+              </article>
+            );
+          })}
         </div>
         <div className="mt-4 flex flex-col justify-between gap-5 border-t border-line pt-8 sm:flex-row sm:items-center">
           <p className="font-display text-2xl">Gostou de alguma solução?</p>
