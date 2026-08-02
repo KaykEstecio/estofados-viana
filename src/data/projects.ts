@@ -34,11 +34,11 @@ export const projectItems: ProjectItem[] = [
   },
   {
     id: "cabeceira-curva-com-led",
-    title: "Cabeceira curva com LED",
+    title: "Cabeceira estofada com ripado e LED",
     category: "Cabeceira instalada",
-    description: "Cabeceira ampla de cantos arredondados, iluminação indireta superior e mesas laterais integradas.",
-    image: "/images/real/projeto-cabeceira-curva.jpeg",
-    imageAlt: "Projeto realizado de cabeceira curva com iluminação e mesas laterais",
+    description: "Módulos estofados verticais combinados ao painel ripado e à iluminação indireta criam uma composição acolhedora e integrada.",
+    image: "/images/real/projeto-cabeceira-ripada-led.jpeg",
+    imageAlt: "Cabeceira estofada com módulos verticais, painel ripado e iluminação indireta",
   },
   {
     id: "cabeceira-vertical-led",
