@@ -21,7 +21,7 @@ export const projectItems: ProjectItem[] = [
     title: "Painel estofado com madeira",
     category: "Painel integrado",
     description: "Painel horizontal produzido para acompanhar o revestimento de madeira e os pontos elétricos do quarto.",
-    image: "/images/real/detalhe-painel-estofado.jpeg",
+    image: "/images/real/detalhe-painel-estofado-sem-icone.jpeg",
     imageAlt: "Projeto realizado de painel estofado escuro com revestimento de madeira",
   },
   {
