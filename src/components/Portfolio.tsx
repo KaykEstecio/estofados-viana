@@ -36,7 +36,7 @@ export function Portfolio({ asPage = false }: PortfolioProps) {
         <div className="grid gap-x-6 md:grid-cols-2 lg:gap-x-10">
           {models.map((item, index) => (
             <article key={item.id} className="motion-card group flex h-full flex-col border-b border-line py-10">
-              <div className={`image-wash overflow-hidden ${item.image.includes("geometrica") || item.image.includes("classica") || item.image.includes("sofa") ? "aspect-[4/5]" : "aspect-[4/3]"}`}>
+              <div className={`image-wash overflow-hidden ${item.imageAspect === "portrait" ? "aspect-[4/5]" : "aspect-[4/3]"}`}>
                 <img src={item.image} alt={item.imageAlt} loading="lazy" className="h-full w-full object-cover object-center" />
               </div>
               <div className="mt-6 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">{String(index + 2).padStart(2, "0")} / {item.category}</p><h3 className="font-display mt-2 text-3xl font-medium sm:text-4xl">{item.title}</h3></div><FiArrowUpRight className="motion-card-arrow mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>

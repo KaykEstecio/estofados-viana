@@ -21,7 +21,7 @@ export function WhatWeDoPage() {
 }
 
 export function BedsPage() {
-  return <ProductCategoryPage label="Camas sob medida" title="Camas pensadas para o seu espaço." description="Escolha uma referência e personalize medidas, tecido, cor e acabamento para criar uma cama coerente com o seu quarto." heroImage="/images/real/projeto-quarto-cabeceira-curva.jpeg" heroAlt="Projeto realizado de cama com cabeceira curva iluminada" items={[]} details={["Medidas adaptadas ao quarto.", "Tecidos e cores escolhidos com você.", "Base e cabeceira podem formar um único conjunto."]} />;
+  return <ProductCategoryPage label="Camas sob medida" title="Camas pensadas para o seu espaço." description="Escolha uma referência e personalize medidas, tecido, cor e acabamento para criar uma cama coerente com o seu quarto." heroImage="/images/real/projeto-quarto-cabeceira-curva-sem-icone.jpeg" heroAlt="Projeto realizado de cama com cabeceira curva iluminada" items={[]} details={["Medidas adaptadas ao quarto.", "Tecidos e cores escolhidos com você.", "Base e cabeceira podem formar um único conjunto."]} />;
 }
 
 export function HeadboardsPage() {
