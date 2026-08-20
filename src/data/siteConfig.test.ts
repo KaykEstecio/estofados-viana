@@ -15,6 +15,11 @@ describe("dados comerciais", () => {
     expect(siteConfig.email).toMatch(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
   });
 
+  it("mantém horário de atendimento e prazo de produção confirmados", () => {
+    expect(siteConfig.openingHours).toBe("Das 9h às 18h");
+    expect(siteConfig.deliveryTime).toBe("De 15 a 25 dias");
+  });
+
   it("não publica coleções vazias", () => {
     expect(categories.length).toBeGreaterThan(0);
     expect(portfolioItems.length).toBeGreaterThan(0);

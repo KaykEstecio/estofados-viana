@@ -11,7 +11,8 @@ Documento reservado para registrar informações reais confirmadas com o cliente
 - Instagram: @aconche_Decor
 - E-mail: aconchedecorcontato@hotmail.com
 - Região de atendimento: Grande São Paulo
-- Horário de atendimento: das 9h às 17h
+- Horário de atendimento: das 9h às 18h
+- Prazo de produção: de 15 a 25 dias
 
 ## Status da Fase 9
 
@@ -19,8 +20,8 @@ Os dados confirmados acima já foram inseridos no site, incluindo identidade,
 contatos, região de atendimento, horário e SEO local.
 
 Os serviços exibidos além de camas e cabeceiras permanecem provisórios até a
-confirmação do cliente. Prazo, entrega, instalação, diferenciais e portfólio
-real não devem ser publicados como informações confirmadas nesta etapa.
+confirmação do cliente. Entrega, instalação e diferenciais ainda não devem ser
+publicados como informações confirmadas nesta etapa.
 
 ## Conteúdo Provisório
 
@@ -28,7 +29,7 @@ Até a confirmação dos dados finais, o site utilizará as seguintes informaç�
 genéricas:
 
 - Serviços: camas personalizadas, cabeceiras personalizadas, cabeceiras estofadas, camas box sob medida, recamiers, puffs e estofados sob medida.
-- Prazo: definido após a avaliação de cada projeto.
+- Prazo de produção: de 15 a 25 dias.
 - Entrega e instalação: combinadas durante o atendimento.
 - Diferenciais: medidas personalizadas, escolha de acabamento, produção sob medida e atendimento pelo WhatsApp.
 - Imagens: espaços reservados até o recebimento das fotos reais.
@@ -73,6 +74,5 @@ Pendências para confirmar com o cliente:
 - Se o cliente quer uma estrutura de categorias parecida.
 - Quais categorias realmente oferece.
 - Quais fotos reais estarão disponíveis.
-- Prazo de entrega.
 - Informações sobre entrega e instalação.
 - Diferenciais reais que podem ser publicados.

@@ -32,7 +32,8 @@ da primeira versão do site da Aconche Decor.
 - [x] Conteúdo provisório identificado como ilustrativo quando necessário.
 - [ ] Confirmar todos os serviços oferecidos pelo cliente.
 - [ ] Inserir projetos reais no portfólio.
-- [ ] Confirmar prazo, entrega, instalação e diferenciais comerciais.
+- [x] Horário de atendimento e prazo de produção confirmados pelo cliente.
+- [ ] Confirmar entrega, instalação e diferenciais comerciais.
 
 ## Checklist de segurança
 

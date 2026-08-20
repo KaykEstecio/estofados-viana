@@ -9,8 +9,8 @@ export const siteConfig = {
   instagramUrl: "https://instagram.com/aconche_decor",
   email: "aconchedecorcontato@hotmail.com",
   serviceRegion: "Grande São Paulo",
-  openingHours: "Das 9h às 17h",
-  deliveryTime: "Definido após a avaliação de cada projeto",
+  openingHours: "Das 9h às 18h",
+  deliveryTime: "De 15 a 25 dias",
   pricingInfo: "Valores definidos após a avaliação das medidas, do desenho e do acabamento",
   deliveryInfo: "Entrega ou instalação combinada durante o atendimento",
   whatsappMessage:

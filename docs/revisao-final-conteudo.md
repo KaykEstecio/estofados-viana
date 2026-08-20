@@ -5,7 +5,7 @@
 - Ortografia e consistência dos textos revisadas em português do Brasil.
 - Telefones, WhatsApp, Instagram, e-mail, região e horário centralizados em `src/data/siteConfig.ts`.
 - Valores informados como personalizados, sem preço fictício ou promessa comercial não confirmada.
-- Prazo de produção informado como dependente da avaliação de cada projeto.
+- Prazo de produção informado como sendo de 15 a 25 dias.
 - Entrega ou instalação informada como item combinado durante o atendimento.
 - Oito fotografias fornecidas pela empresa foram selecionadas e integradas à capa, aos projetos, às categorias e à apresentação institucional.
 - A imagem conceitual da capa continua identificada como ilustrativa; as demais usam legendas neutras de projeto e acabamento.
@@ -20,5 +20,5 @@
 
 ## Dados comerciais que ainda dependem da empresa
 
-- Não foi publicado preço inicial, tabela de valores, prazo fixo ou garantia porque esses dados não foram fornecidos e variam conforme o projeto.
+- Não foi publicado preço inicial, tabela de valores ou garantia porque esses dados não foram fornecidos. O prazo de produção confirmado é de 15 a 25 dias.
 - Caso a empresa defina políticas fixas, atualizar primeiro `src/data/siteConfig.ts` e revisar todos os pontos de contato.
