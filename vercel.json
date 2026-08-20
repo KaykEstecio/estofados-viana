@@ -2,17 +2,19 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/qualidade", "destination": "/sob-medida", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/o-que-fazemos", "destination": "/index.html" },
-    { "source": "/modelos", "destination": "/index.html" },
-    { "source": "/camas", "destination": "/index.html" },
-    { "source": "/cabeceiras", "destination": "/index.html" },
-    { "source": "/puffs-e-banquetas", "destination": "/index.html" },
-    { "source": "/projetos", "destination": "/index.html" },
-    { "source": "/qualidade", "destination": "/index.html" },
-    { "source": "/sob-medida", "destination": "/index.html" },
-    { "source": "/sobre", "destination": "/index.html" },
-    { "source": "/contato", "destination": "/index.html" }
+    { "source": "/o-que-fazemos", "destination": "/o-que-fazemos/index.html" },
+    { "source": "/modelos", "destination": "/modelos/index.html" },
+    { "source": "/camas", "destination": "/camas/index.html" },
+    { "source": "/cabeceiras", "destination": "/cabeceiras/index.html" },
+    { "source": "/puffs-e-banquetas", "destination": "/puffs-e-banquetas/index.html" },
+    { "source": "/projetos", "destination": "/projetos/index.html" },
+    { "source": "/sob-medida", "destination": "/sob-medida/index.html" },
+    { "source": "/sobre", "destination": "/sobre/index.html" },
+    { "source": "/contato", "destination": "/contato/index.html" }
   ],
   "headers": [
     {

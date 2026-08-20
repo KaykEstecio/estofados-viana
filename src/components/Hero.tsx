@@ -21,7 +21,7 @@ export function Hero() {
             Peças personalizadas para transformar o quarto em um ambiente confortável, elegante e alinhado ao seu estilo.
           </p>
           <div className="hero-motion mt-7 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-6">
-            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="interactive-lift inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white hover:opacity-90">
+            <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="interactive-lift inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white hover:opacity-90">
               <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
             </a>
             <Link to="/modelos" className="arrow-link inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold text-ink hover:text-caramel">

@@ -27,7 +27,7 @@ export function Portfolio({ asPage = false }: PortfolioProps) {
             <h2 className="font-display mt-3 text-4xl font-medium leading-none sm:text-5xl">{featuredModel.title}</h2>
             <p className="mt-6 text-sm leading-7 text-coffee">{featuredModel.description}</p>
             <p className="mt-5 border-t border-line pt-5 text-[0.62rem] uppercase leading-5 tracking-[0.12em] text-coffee">{featuredModel.highlight}</p>
-            <a href={getWhatsAppLink(`Olá, gostei do modelo “${featuredModel.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noreferrer" className="interactive-lift mt-8 inline-flex min-h-12 items-center justify-center gap-2 bg-caramel px-5 text-xs font-semibold uppercase tracking-[0.08em] text-white">
+            <a href={getWhatsAppLink(`Olá, gostei do modelo “${featuredModel.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noopener noreferrer" className="interactive-lift mt-8 inline-flex min-h-12 items-center justify-center gap-2 bg-caramel px-5 text-xs font-semibold uppercase tracking-[0.08em] text-white">
               <FaWhatsapp aria-hidden="true" /> Orçar este modelo
             </a>
           </div>
@@ -42,7 +42,7 @@ export function Portfolio({ asPage = false }: PortfolioProps) {
               <div className="mt-6 flex items-start justify-between gap-5"><div><p className="editorial-label text-caramel">{String(index + 2).padStart(2, "0")} / {item.category}</p><h3 className="font-display mt-2 text-3xl font-medium sm:text-4xl">{item.title}</h3></div><FiArrowUpRight className="motion-card-arrow mt-1 shrink-0 text-xl text-coffee" aria-hidden="true" /></div>
               <p className="mt-4 max-w-xl text-sm leading-7 text-coffee">{item.description}</p>
               <p className="mt-4 text-[0.62rem] uppercase leading-5 tracking-[0.12em] text-coffee">{item.highlight}</p>
-              <a href={getWhatsAppLink(`Olá, gostei do modelo “${item.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noreferrer" className="interactive-lift mt-6 inline-flex min-h-11 items-center justify-center gap-2 border border-caramel px-4 text-xs font-semibold uppercase tracking-[0.08em] text-caramel hover:bg-caramel hover:text-white">
+              <a href={getWhatsAppLink(`Olá, gostei do modelo “${item.title}” e gostaria de solicitar um orçamento.`)} target="_blank" rel="noopener noreferrer" className="interactive-lift mt-6 inline-flex min-h-11 items-center justify-center gap-2 border border-caramel px-4 text-xs font-semibold uppercase tracking-[0.08em] text-caramel hover:bg-caramel hover:text-white">
                 <FaWhatsapp aria-hidden="true" /> Orçar este modelo
               </a>
             </article>

@@ -11,6 +11,11 @@ import { Process } from "../components/Process";
 import { ProductCategoryPage } from "../components/ProductCategoryPage";
 import { Projects } from "../components/Projects";
 import { Services } from "../components/Services";
+import { portfolioItems } from "../data/portfolio";
+
+const bedItems = portfolioItems.filter((item) => item.category === "Camas");
+const headboardItems = portfolioItems.filter((item) => item.category === "Cabeceiras");
+const upholsteryItems = portfolioItems.filter((item) => item.category === "Outros estofados");
 
 export function HomePage() {
   return <><Hero /><FeaturedProjects /></>;
@@ -21,15 +26,15 @@ export function WhatWeDoPage() {
 }
 
 export function BedsPage() {
-  return <ProductCategoryPage label="Camas sob medida" title="Camas pensadas para o seu espaço." description="Escolha uma referência e personalize medidas, tecido, cor e acabamento para criar uma cama coerente com o seu quarto." heroImage="/images/real/projeto-quarto-cabeceira-curva-sem-icone.jpeg" heroAlt="Projeto realizado de cama com cabeceira curva iluminada" items={[]} details={["Medidas adaptadas ao quarto.", "Tecidos e cores escolhidos com você.", "Base e cabeceira podem formar um único conjunto."]} />;
+  return <ProductCategoryPage label="Camas sob medida" title="Camas pensadas para o seu espaço." description="Escolha uma referência e personalize medidas, tecido, cor e acabamento para criar uma cama coerente com o seu quarto." heroImage="/images/real/projeto-quarto-cabeceira-curva-sem-icone.jpeg" heroAlt="Projeto realizado de cama com cabeceira curva iluminada" items={bedItems} details={["Medidas adaptadas ao quarto.", "Tecidos e cores escolhidos com você.", "Base e cabeceira podem formar um único conjunto."]} />;
 }
 
 export function HeadboardsPage() {
-  return <ProductCategoryPage label="Cabeceiras e painéis" title="Cabeceiras que transformam a parede." description="Modelos lineares, modulares ou com desenhos personalizados para acompanhar a proporção e a identidade do ambiente." heroImage="/images/real/projeto-painel-espelhos.jpeg" heroAlt="Painel estofado vertical instalado entre espelhos" items={[]} details={["Altura e largura definidas para a parede.", "Desenhos modulares, verticais ou geométricos.", "Integração possível com iluminação e marcenaria."]} />;
+  return <ProductCategoryPage label="Cabeceiras e painéis" title="Cabeceiras que transformam a parede." description="Modelos lineares, modulares ou com desenhos personalizados para acompanhar a proporção e a identidade do ambiente." heroImage="/images/real/projeto-painel-espelhos.jpeg" heroAlt="Painel estofado vertical instalado entre espelhos" items={headboardItems} details={["Altura e largura definidas para a parede.", "Desenhos modulares, verticais ou geométricos.", "Integração possível com iluminação e marcenaria."]} />;
 }
 
 export function OttomansPage() {
-  return <ProductCategoryPage label="Puffs e banquetas" title="Apoio, conforto e acabamento sob medida." description="Puffs, banquetas e recamiers desenvolvidos para complementar quartos, closets, salas e outros ambientes." heroImage="/images/real/sofa-estofado-cinza.jpeg" heroAlt="Estofado cinza com acabamento macio em ambiente residencial" items={[]} details={["Dimensões adequadas ao uso e ao espaço.", "Opções de tecidos, cores e densidades.", "Desenho alinhado aos demais estofados do ambiente."]} />;
+  return <ProductCategoryPage label="Puffs, banquetas e estofados" title="Apoio, conforto e acabamento sob medida." description="Puffs, banquetas, recamiers e outros estofados desenvolvidos para complementar quartos, closets, salas e diferentes ambientes." heroImage="/images/real/sofa-estofado-cinza.jpeg" heroAlt="Estofado cinza com acabamento macio em ambiente residencial" items={upholsteryItems} details={["Dimensões adequadas ao uso e ao espaço.", "Opções de tecidos, cores e densidades.", "Desenho alinhado aos demais estofados do ambiente."]} />;
 }
 
 export function ModelsPage() {
@@ -41,10 +46,6 @@ export function ProjectsPage() {
 }
 
 export function CustomPage() {
-  return <><CustomProjects asPage /><Process /></>;
-}
-
-export function QualityPage() {
   return <><CustomProjects asPage /><Process /></>;
 }
 

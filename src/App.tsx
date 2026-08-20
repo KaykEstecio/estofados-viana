@@ -1,9 +1,9 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { RouteEffects } from "./components/RouteEffects";
 import { WhatsAppButton } from "./components/WhatsAppButton";
-import { AboutPage, BedsPage, ContactPage, CustomPage, HeadboardsPage, HomePage, ModelsPage, NotFoundPage, OttomansPage, ProjectsPage, QualityPage, WhatWeDoPage } from "./pages/SitePages";
+import { AboutPage, BedsPage, ContactPage, CustomPage, HeadboardsPage, HomePage, ModelsPage, NotFoundPage, OttomansPage, ProjectsPage, WhatWeDoPage } from "./pages/SitePages";
 
 function App() {
   const location = useLocation();
@@ -22,7 +22,7 @@ function App() {
             <Route path="/cabeceiras" element={<HeadboardsPage />} />
             <Route path="/puffs-e-banquetas" element={<OttomansPage />} />
             <Route path="/projetos" element={<ProjectsPage />} />
-            <Route path="/qualidade" element={<QualityPage />} />
+            <Route path="/qualidade" element={<Navigate to="/sob-medida" replace />} />
             <Route path="/sob-medida" element={<CustomPage />} />
             <Route path="/sobre" element={<AboutPage />} />
             <Route path="/contato" element={<ContactPage />} />

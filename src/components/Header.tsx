@@ -65,7 +65,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="interactive-lift hidden min-h-10 items-center gap-2 bg-caramel px-4 text-xs font-semibold text-white xl:inline-flex">
+          <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="interactive-lift hidden min-h-10 items-center gap-2 bg-caramel px-4 text-xs font-semibold text-white xl:inline-flex">
             <FaWhatsapp aria-hidden="true" /> Solicitar orçamento
           </a>
           <button ref={menuButtonRef} type="button" onClick={() => setMenuOpen(true)} aria-expanded={menuOpen} aria-controls="menu-mobile" aria-label="Abrir menu" className="interactive-lift grid size-10 place-items-center border border-line text-xl text-ink xl:hidden">
@@ -82,7 +82,7 @@ export function Header() {
           <nav aria-label="Navegação principal em telas pequenas" className="flex flex-1 flex-col items-center justify-center gap-7 py-8">
             {links.map(([label, href]) => <NavLink key={href} to={href} end={href === "/"} onClick={() => setMenuOpen(false)} className={({ isActive }) => `font-display text-center text-3xl tracking-[0.04em] transition-colors ${isActive ? "text-caramel" : "text-ink"}`}>{label}</NavLink>)}
           </nav>
-          <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="interactive-lift inline-flex min-h-14 items-center justify-center gap-2 bg-caramel px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
+          <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="interactive-lift inline-flex min-h-14 items-center justify-center gap-2 bg-caramel px-5 text-sm font-semibold uppercase tracking-[0.08em] text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
         </div>
       ) : null}
     </header>

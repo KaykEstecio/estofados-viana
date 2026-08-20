@@ -1,6 +1,8 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { projectItems } from "../data/projects";
+import { getWhatsAppLink } from "../utils/whatsapp";
 
 const [mainProject, detailProject] = [projectItems[2], projectItems[0]];
 
@@ -59,11 +61,19 @@ export function FeaturedProjects() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-4 border-t border-line pt-7 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl text-sm leading-7 text-coffee">Quer explorar estilos, formatos e acabamentos antes de decidir?</p>
-          <Link to="/modelos" className="arrow-link inline-flex w-fit items-center gap-2 border-b border-ink pb-2 text-sm font-semibold">
-            Conhecer todos os modelos <FiArrowUpRight className="link-arrow-motion" aria-hidden="true" />
-          </Link>
+        <div className="mt-8 flex flex-col gap-5 border-t border-line pt-7 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p className="font-display text-2xl font-medium">Já tem uma referência para o seu projeto?</p>
+            <p className="mt-2 max-w-xl text-sm leading-7 text-coffee">Envie a imagem, as medidas aproximadas e conte como imagina o ambiente.</p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <Link to="/modelos" className="arrow-link inline-flex min-h-12 items-center justify-center gap-2 border-b border-ink px-1 text-sm font-semibold">
+              Conhecer modelos <FiArrowUpRight className="link-arrow-motion" aria-hidden="true" />
+            </Link>
+            <a href={getWhatsAppLink("Olá, já tenho uma referência e gostaria de solicitar um orçamento para o meu projeto.")} target="_blank" rel="noopener noreferrer" className="interactive-lift inline-flex min-h-12 items-center justify-center gap-3 bg-caramel px-6 text-sm font-semibold text-white">
+              <FaWhatsapp aria-hidden="true" /> Enviar referência pelo WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </section>

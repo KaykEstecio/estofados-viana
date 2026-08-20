@@ -1,6 +1,6 @@
 # Checklist de Entrega
 
-Atualizado em 13 de julho de 2026. Este documento registra o estado verificável
+Atualizado em 20 de agosto de 2026. Este documento registra o estado verificável
 da primeira versão do site da Aconche Decor.
 
 ## Checklist técnico
@@ -12,6 +12,7 @@ da primeira versão do site da Aconche Decor.
 - [x] ESLint configurado com regras para TypeScript e React Hooks.
 - [x] Testes automatizados configurados com Vitest.
 - [x] Comando único de validação disponível: `npm run check`.
+- [x] Build gera HTML com metadados específicos para cada rota pública.
 - [x] Repositório Git conectado ao GitHub na branch `main`.
 
 ## Checklist visual
@@ -21,7 +22,8 @@ da primeira versão do site da Aconche Decor.
 - [x] Identidade visual em tons de bege, caramelo e marrom.
 - [x] Símbolo da marca e favicon inseridos.
 - [x] Estados de foco visíveis para navegação por teclado.
-- [ ] Substituir as imagens ilustrativas por fotografias reais autorizadas.
+- [x] Fotografias reais inseridas nos modelos e projetos publicados.
+- [ ] Confirmar a autorização final de uso de todas as fotografias.
 - [ ] Validar a identidade visual final e o logo com o cliente.
 
 ## Checklist de conteúdo
@@ -31,7 +33,7 @@ da primeira versão do site da Aconche Decor.
 - [x] Fluxo de orçamento pelo WhatsApp explicado.
 - [x] Conteúdo provisório identificado como ilustrativo quando necessário.
 - [ ] Confirmar todos os serviços oferecidos pelo cliente.
-- [ ] Inserir projetos reais no portfólio.
+- [x] Projetos reais inseridos no portfólio.
 - [x] Horário de atendimento e prazo de produção confirmados pelo cliente.
 - [ ] Confirmar entrega, instalação e diferenciais comerciais.
 
@@ -41,7 +43,7 @@ da primeira versão do site da Aconche Decor.
 - [x] Headers de segurança configurados em `vercel.json`.
 - [x] Links externos com `noopener noreferrer`.
 - [x] Nenhuma credencial ou token armazenado no código.
-- [x] `npm audit` executado sem vulnerabilidades conhecidas em 13/07/2026.
+- [x] `npm audit` executado sem vulnerabilidades conhecidas em 20/08/2026.
 - [x] Política de Segurança de Conteúdo configurada.
 
 ## Checklist de SEO
@@ -52,6 +54,7 @@ da primeira versão do site da Aconche Decor.
 - [x] Textos alternativos nas imagens.
 - [x] Posicionamento local para a Grande São Paulo.
 - [x] `canonical` e `og:url` configurados com o domínio oficial `https://www.aconchedecor.com.br/`.
+- [x] Título, descrição, canonical e Open Graph específicos para cada rota pública.
 - [x] `robots.txt` e `sitemap.xml` configurados com o domínio oficial.
 - [ ] Atualizar a imagem social quando houver fotografia real aprovada.
 
@@ -61,7 +64,8 @@ da primeira versão do site da Aconche Decor.
 - [x] Pasta `dist` ignorada pelo Git e gerada pelo build.
 - [x] Projeto vinculado à conta Vercel `kayk-s-projects2`.
 - [x] Deploy de produção realizado em `https://aconche-decor.vercel.app`.
-- [ ] Validar navegação, WhatsApp e aparência na URL pública.
+- [x] Navegação, WhatsApp e rotas validados na URL pública antes desta revisão.
+- [ ] Validar novamente a aparência após publicar esta revisão.
 - [x] Domínio próprio `https://www.aconchedecor.com.br/` configurado.
 - [ ] Executar a aprovação final do cliente.
 
@@ -76,13 +80,13 @@ npm run preview
 
 ## Pendências para entrega comercial
 
-1. Fotografias reais e autorizadas dos produtos e projetos.
-2. Confirmação dos serviços e informações comerciais ainda provisórias.
+1. Autorização final das fotografias publicadas.
+2. Confirmação dos serviços, entrega, instalação e diferenciais ainda provisórios.
 3. Aprovação do logo e da versão final pelo cliente.
 
 ## Melhorias futuras recomendadas
 
-- Converter fotografias finais para WebP ou AVIF e revisar dimensões.
+- Converter novas fotografias para WebP ou AVIF e revisar dimensões antes da publicação.
 - Adicionar testes de navegação em navegador após o domínio estar publicado.
 - Monitorar Core Web Vitals e indexação depois do lançamento.
 - Revisar periodicamente dependências com `npm audit` e `npm outdated`.

@@ -22,11 +22,11 @@ export function Contact({ asPage = false }: ContactProps) {
             <p className="editorial-label text-caramel">Vamos conversar</p>
             <Heading className="font-display mt-4 max-w-lg text-5xl font-medium leading-[0.92] sm:text-7xl">Seu próximo projeto pode começar por uma mensagem.</Heading>
             <p className="mt-8 max-w-md text-sm leading-7 text-coffee">Envie uma foto do ambiente ou uma referência do que procura. Retornamos durante o horário de atendimento.</p>
-            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" className="interactive-lift mt-10 inline-flex min-h-12 items-center gap-3 bg-caramel px-6 text-sm font-semibold text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
+            <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="interactive-lift mt-10 inline-flex min-h-12 items-center gap-3 bg-caramel px-6 text-sm font-semibold text-white"><FaWhatsapp aria-hidden="true" /> Solicitar orçamento</a>
           </div>
           <div className="border-t border-line">
             {contacts.map((contact) => (
-              <a key={contact.label} href={contact.href} target={contact.href.startsWith("http") ? "_blank" : undefined} rel={contact.href.startsWith("http") ? "noreferrer" : undefined} className="contact-link-motion group grid grid-cols-[28px_1fr_auto] items-center gap-4 border-b border-line py-6">
+              <a key={contact.label} href={contact.href} target={contact.href.startsWith("http") ? "_blank" : undefined} rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined} className="contact-link-motion group grid grid-cols-[28px_1fr_auto] items-center gap-4 border-b border-line py-6">
                 <span className="text-caramel" aria-hidden="true">{contact.icon}</span>
                 <span><span className="editorial-label block text-coffee">{contact.label}</span><span className="mt-1 block break-all font-display text-xl sm:text-2xl">{contact.value}</span></span>
                 <FiArrowUpRight className="text-coffee group-hover:text-caramel" aria-hidden="true" />
