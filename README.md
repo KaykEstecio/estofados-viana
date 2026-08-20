@@ -94,5 +94,6 @@ de segurança definidos em `vercel.json`.
 Cada atualização enviada para a branch principal gerará um novo deploy de
 produção. Outras branches e pull requests poderão gerar previews.
 
-Depois da publicação, substitua as URLs relativas de canonical e Open Graph em
-`index.html` pelo domínio definitivo da Vercel ou pelo domínio próprio.
+O domínio oficial configurado no canonical, Open Graph, Twitter Card, robots e
+sitemap é `https://www.aconchedecor.com.br/`. Se o domínio mudar, atualize
+`index.html`, `public/robots.txt` e `public/sitemap.xml` em conjunto.

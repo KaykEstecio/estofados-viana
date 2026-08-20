@@ -50,7 +50,8 @@ da primeira versão do site da Aconche Decor.
 - [x] Hierarquia com um `h1` principal e títulos de seção.
 - [x] Textos alternativos nas imagens.
 - [x] Posicionamento local para a Grande São Paulo.
-- [x] `canonical` e `og:url` configurados com o domínio de produção.
+- [x] `canonical` e `og:url` configurados com o domínio oficial `https://www.aconchedecor.com.br/`.
+- [x] `robots.txt` e `sitemap.xml` configurados com o domínio oficial.
 - [ ] Atualizar a imagem social quando houver fotografia real aprovada.
 
 ## Checklist de publicação e entrega
@@ -60,7 +61,7 @@ da primeira versão do site da Aconche Decor.
 - [x] Projeto vinculado à conta Vercel `kayk-s-projects2`.
 - [x] Deploy de produção realizado em `https://aconche-decor.vercel.app`.
 - [ ] Validar navegação, WhatsApp e aparência na URL pública.
-- [ ] Configurar domínio próprio, se houver.
+- [x] Domínio próprio `https://www.aconchedecor.com.br/` configurado.
 - [ ] Executar a aprovação final do cliente.
 
 ## Comandos de manutenção
